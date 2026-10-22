@@ -1,0 +1,55 @@
+# ── secrets & local-only files ──────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+*.local.md
+*.pem
+*.key
+
+# ── editor / OS / tooling ───────────────────────────────────────────────────
+.claude/
+**/.claude/
+CLAUDE.md
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Python ──────────────────────────────────────────────────────────────────
+**/.venv/
+**/venv/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# ── Node / frontend ─────────────────────────────────────────────────────────
+**/node_modules/
+frontend/dist/
+frontend/.vite/
+*.tsbuildinfo
+npm-debug.log*
+
+# ── runtime data (SQLite, uploads, embedded Qdrant, caches, JWT secret) ────
+backend/data/
+*.db
+*.sqlite3
+*.log
+
+# ── training: GPU lock, raw downloads, run checkpoints, llama.cpp, weights ──
+training/GPU_BUSY
+training/data/raw/
+training/data/sft/
+training/data/sft_scoped/dropped.jsonl
+training/runs/
+training/llama.cpp/
+*.gguf
+*.safetensors
+*.bin
+*.pt

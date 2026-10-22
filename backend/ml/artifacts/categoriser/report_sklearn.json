@@ -1,0 +1,388 @@
+{
+  "key": "categoriser",
+  "name": "Transaction categoriser (sklearn fallback)",
+  "task": "14-way bank-narration classification",
+  "model": "TF-IDF (word 1-2 + char 2-5 grams) + logistic regression",
+  "trainedAt": "2026-10-22T13:43:28Z",
+  "dataset": {
+    "name": "categoriser_train.jsonl (generated Indian narrations + demo statement) / categoriser_test.jsonl (author-labelled)",
+    "license": "Project-authored (same licence as the repository)",
+    "train": 6817,
+    "test": 430,
+    "note": "6720 generated + 97 demo-statement rows; test rows were written and labelled by the author (see ml/data/README.md)"
+  },
+  "metrics": {
+    "accuracy": 0.986,
+    "macroF1": 0.9865
+  },
+  "baseline": {
+    "name": "Rules (app.features.finance.categorize)",
+    "accuracy": 0.7233,
+    "macroF1": 0.7658
+  },
+  "labels": [
+    "salary",
+    "rent",
+    "groceries",
+    "dining",
+    "travel",
+    "fuel",
+    "utilities",
+    "shopping",
+    "subscriptions",
+    "emi_loan",
+    "investments",
+    "transfers",
+    "fees",
+    "cash"
+  ],
+  "perClass": [
+    {
+      "label": "salary",
+      "precision": 1.0,
+      "recall": 0.9615,
+      "f1": 0.9804,
+      "support": 26
+    },
+    {
+      "label": "rent",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 26
+    },
+    {
+      "label": "groceries",
+      "precision": 0.9706,
+      "recall": 0.9706,
+      "f1": 0.9706,
+      "support": 34
+    },
+    {
+      "label": "dining",
+      "precision": 0.9714,
+      "recall": 1.0,
+      "f1": 0.9855,
+      "support": 34
+    },
+    {
+      "label": "travel",
+      "precision": 0.9697,
+      "recall": 1.0,
+      "f1": 0.9846,
+      "support": 32
+    },
+    {
+      "label": "fuel",
+      "precision": 1.0,
+      "recall": 0.9583,
+      "f1": 0.9787,
+      "support": 24
+    },
+    {
+      "label": "utilities",
+      "precision": 0.9444,
+      "recall": 1.0,
+      "f1": 0.9714,
+      "support": 34
+    },
+    {
+      "label": "shopping",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 34
+    },
+    {
+      "label": "subscriptions",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 32
+    },
+    {
+      "label": "emi_loan",
+      "precision": 1.0,
+      "recall": 0.9667,
+      "f1": 0.9831,
+      "support": 30
+    },
+    {
+      "label": "investments",
+      "precision": 1.0,
+      "recall": 0.9412,
+      "f1": 0.9697,
+      "support": 34
+    },
+    {
+      "label": "transfers",
+      "precision": 0.973,
+      "recall": 1.0,
+      "f1": 0.9863,
+      "support": 36
+    },
+    {
+      "label": "fees",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 26
+    },
+    {
+      "label": "cash",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 28
+    }
+  ],
+  "confusion": [
+    [
+      25,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      26,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      33,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      34,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      32,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      23,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      34,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      34,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      32,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      29,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      32,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      36,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      26,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      28
+    ]
+  ],
+  "extras": {
+    "bgeSmallLrAccuracy": 0.8977,
+    "bgeSmallLrMacroF1": 0.902,
+    "bestC": 16.0,
+    "trainingSeconds": 209.4738
+  },
+  "ablation": [
+    {
+      "name": "Rules (app.features.finance.categorize)",
+      "accuracy": 0.7233,
+      "macroF1": 0.7658
+    },
+    {
+      "name": "TF-IDF (word 1-2 + char 2-5 grams) + logistic regression",
+      "accuracy": 0.986,
+      "macroF1": 0.9865
+    },
+    {
+      "name": "Logistic regression on bge-small embeddings",
+      "accuracy": 0.8977,
+      "macroF1": 0.902
+    }
+  ]
+}

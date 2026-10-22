@@ -1,0 +1,34 @@
+{
+  "labels": [
+    "salary",
+    "rent",
+    "groceries",
+    "dining",
+    "travel",
+    "fuel",
+    "utilities",
+    "shopping",
+    "subscriptions",
+    "emi_loan",
+    "investments",
+    "transfers",
+    "fees",
+    "cash"
+  ],
+  "display": {
+    "salary": "Salary",
+    "rent": "Rent",
+    "groceries": "Groceries",
+    "dining": "Dining",
+    "travel": "Travel",
+    "fuel": "Fuel",
+    "utilities": "Utilities",
+    "shopping": "Shopping",
+    "subscriptions": "Subscriptions",
+    "emi_loan": "Loans & EMI",
+    "investments": "Investments",
+    "transfers": "Transfers",
+    "fees": "Fees & charges",
+    "cash": "Cash withdrawal"
+  }
+}

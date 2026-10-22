@@ -1,0 +1,28 @@
+{
+  "train": 2578,
+  "holdout": 286,
+  "judgeEval": 100,
+  "droppedTrain": {
+    "sujet_qa": 415,
+    "sujet_conversation": 84,
+    "sujet_qa_with_context": 52,
+    "sujet_sentiment": 5
+  },
+  "droppedHoldout": {
+    "sujet_qa": 46,
+    "sujet_qa_with_context": 8,
+    "sujet_sentiment": 2,
+    "sujet_conversation": 7
+  },
+  "bySourceTrain": {
+    "sujet_conversation": 217,
+    "sujet_qa_with_context": 578,
+    "refusal": 139,
+    "finqa": 515,
+    "indian_qa": 334,
+    "sujet_sentiment": 220,
+    "sujet_qa": 575
+  },
+  "rule": "drop Sujet rows whose user prompt the finance router (fin_router.joblib) labels out_of_scope",
+  "source": "training/data/sft"
+}

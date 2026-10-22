@@ -1,0 +1,345 @@
+{
+  "key": "sentiment",
+  "name": "Financial sentiment",
+  "task": "3-way sentiment of finance headlines / sentences",
+  "model": "DistilBERT-base-uncased fine-tuned, ONNX int8",
+  "trainedAt": "2026-10-22T14:09:41Z",
+  "dataset": {
+    "name": "Financial PhraseBank (sentences_50agree) + Twitter Financial News Sentiment",
+    "license": "PhraseBank CC BY-NC-SA 3.0 (academic use); TFNS MIT",
+    "note": "test = PhraseBank 10 % stratified hold-out + the official TFNS validation file; see ml/data/README.md",
+    "train": 13715,
+    "test": 2861
+  },
+  "metrics": {
+    "accuracy": 0.8675,
+    "macroF1": 0.8315
+  },
+  "baseline": {
+    "name": "Lexicon (app.features.market.sentiment)",
+    "accuracy": 0.6928,
+    "macroF1": 0.5791
+  },
+  "labels": [
+    "negative",
+    "neutral",
+    "positive"
+  ],
+  "perClass": [
+    {
+      "label": "negative",
+      "precision": 0.772,
+      "recall": 0.8005,
+      "f1": 0.786,
+      "support": 406
+    },
+    {
+      "label": "neutral",
+      "precision": 0.9014,
+      "recall": 0.9121,
+      "f1": 0.9067,
+      "support": 1844
+    },
+    {
+      "label": "positive",
+      "precision": 0.8275,
+      "recall": 0.7774,
+      "f1": 0.8017,
+      "support": 611
+    }
+  ],
+  "confusion": [
+    [
+      325,
+      69,
+      12
+    ],
+    [
+      75,
+      1682,
+      87
+    ],
+    [
+      21,
+      115,
+      475
+    ]
+  ],
+  "extras": {
+    "fpbAccuracy": 0.8554,
+    "fpbMacroF1": 0.842,
+    "tfnsAccuracy": 0.87,
+    "tfnsMacroF1": 0.83,
+    "pytorchAccuracy": 0.8731,
+    "pytorchMacroF1": 0.8393,
+    "onnxFp32Accuracy": 0.8731,
+    "onnxInt8Accuracy": 0.8675,
+    "valMacroF1": 0.8152,
+    "epochs": 2.0,
+    "batchSize": 32.0,
+    "learningRate": 3e-05,
+    "maxTokens": 128.0,
+    "trainMinutes": 1.1625,
+    "cpuLatencyMsPerRow": 8.8393,
+    "trainRows": 12296.0,
+    "tfidfLrAccuracy": 0.8088,
+    "tfidfLrMacroF1": 0.7519
+  },
+  "ablation": [
+    {
+      "name": "Lexicon (app.features.market.sentiment)",
+      "accuracy": 0.6928,
+      "macroF1": 0.5791,
+      "fpbAccuracy": 0.6612,
+      "fpbMacroF1": 0.5125,
+      "tfnsAccuracy": 0.6992,
+      "tfnsMacroF1": 0.5915
+    },
+    {
+      "name": "TF-IDF (word 1-2 + char 2-5 grams) + logistic regression",
+      "accuracy": 0.8088,
+      "macroF1": 0.7519,
+      "fpbAccuracy": 0.7459,
+      "fpbMacroF1": 0.7045,
+      "tfnsAccuracy": 0.8216,
+      "tfnsMacroF1": 0.7632
+    },
+    {
+      "name": "DistilBERT-base-uncased fine-tuned, ONNX int8",
+      "accuracy": 0.8675,
+      "macroF1": 0.8315,
+      "fpbAccuracy": 0.8554,
+      "fpbMacroF1": 0.842,
+      "tfnsAccuracy": 0.87,
+      "tfnsMacroF1": 0.83
+    }
+  ],
+  "training": {
+    "base": "distilbert/distilbert-base-uncased",
+    "epochs": 2,
+    "batchSize": 32,
+    "learningRate": 3e-05,
+    "maxTokens": 128,
+    "fp16": true,
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "trainMinutes": 1.1625,
+    "history": [
+      {
+        "loss": 1.0689865112304688,
+        "epoch": 0.05194805194805195,
+        "step": 20
+      },
+      {
+        "loss": 0.8902320861816406,
+        "epoch": 0.1038961038961039,
+        "step": 40
+      },
+      {
+        "loss": 0.8160353660583496,
+        "epoch": 0.15584415584415584,
+        "step": 60
+      },
+      {
+        "loss": 0.764899730682373,
+        "epoch": 0.2077922077922078,
+        "step": 80
+      },
+      {
+        "loss": 0.6926746845245362,
+        "epoch": 0.2597402597402597,
+        "step": 100
+      },
+      {
+        "loss": 0.5981707096099853,
+        "epoch": 0.3116883116883117,
+        "step": 120
+      },
+      {
+        "loss": 0.5973138809204102,
+        "epoch": 0.36363636363636365,
+        "step": 140
+      },
+      {
+        "loss": 0.4836732864379883,
+        "epoch": 0.4155844155844156,
+        "step": 160
+      },
+      {
+        "loss": 0.46371779441833494,
+        "epoch": 0.4675324675324675,
+        "step": 180
+      },
+      {
+        "loss": 0.5207644939422608,
+        "epoch": 0.5194805194805194,
+        "step": 200
+      },
+      {
+        "loss": 0.494290828704834,
+        "epoch": 0.5714285714285714,
+        "step": 220
+      },
+      {
+        "loss": 0.39952783584594725,
+        "epoch": 0.6233766233766234,
+        "step": 240
+      },
+      {
+        "loss": 0.45714850425720216,
+        "epoch": 0.6753246753246753,
+        "step": 260
+      },
+      {
+        "loss": 0.45731630325317385,
+        "epoch": 0.7272727272727273,
+        "step": 280
+      },
+      {
+        "loss": 0.4591080665588379,
+        "epoch": 0.7792207792207793,
+        "step": 300
+      },
+      {
+        "loss": 0.42378768920898435,
+        "epoch": 0.8311688311688312,
+        "step": 320
+      },
+      {
+        "loss": 0.4207622528076172,
+        "epoch": 0.8831168831168831,
+        "step": 340
+      },
+      {
+        "loss": 0.3914399862289429,
+        "epoch": 0.935064935064935,
+        "step": 360
+      },
+      {
+        "loss": 0.4319242000579834,
+        "epoch": 0.987012987012987,
+        "step": 380
+      },
+      {
+        "eval_loss": 0.3993445038795471,
+        "eval_accuracy": 0.8414,
+        "eval_macro_f1": 0.8045,
+        "epoch": 1.0,
+        "step": 385
+      },
+      {
+        "loss": 0.345705509185791,
+        "epoch": 1.0389610389610389,
+        "step": 400
+      },
+      {
+        "loss": 0.3333585262298584,
+        "epoch": 1.0909090909090908,
+        "step": 420
+      },
+      {
+        "loss": 0.3087179183959961,
+        "epoch": 1.1428571428571428,
+        "step": 440
+      },
+      {
+        "loss": 0.2885406494140625,
+        "epoch": 1.1948051948051948,
+        "step": 460
+      },
+      {
+        "loss": 0.279582142829895,
+        "epoch": 1.2467532467532467,
+        "step": 480
+      },
+      {
+        "loss": 0.31836585998535155,
+        "epoch": 1.2987012987012987,
+        "step": 500
+      },
+      {
+        "loss": 0.32323436737060546,
+        "epoch": 1.3506493506493507,
+        "step": 520
+      },
+      {
+        "loss": 0.2836484432220459,
+        "epoch": 1.4025974025974026,
+        "step": 540
+      },
+      {
+        "loss": 0.28002519607543946,
+        "epoch": 1.4545454545454546,
+        "step": 560
+      },
+      {
+        "loss": 0.28651771545410154,
+        "epoch": 1.5064935064935066,
+        "step": 580
+      },
+      {
+        "loss": 0.22278172969818116,
+        "epoch": 1.5584415584415585,
+        "step": 600
+      },
+      {
+        "loss": 0.29051814079284666,
+        "epoch": 1.6103896103896105,
+        "step": 620
+      },
+      {
+        "loss": 0.25586977005004885,
+        "epoch": 1.6623376623376624,
+        "step": 640
+      },
+      {
+        "loss": 0.285516095161438,
+        "epoch": 1.7142857142857144,
+        "step": 660
+      },
+      {
+        "loss": 0.3035522699356079,
+        "epoch": 1.7662337662337664,
+        "step": 680
+      },
+      {
+        "loss": 0.29375576972961426,
+        "epoch": 1.8181818181818183,
+        "step": 700
+      },
+      {
+        "loss": 0.3025019645690918,
+        "epoch": 1.87012987012987,
+        "step": 720
+      },
+      {
+        "loss": 0.27490179538726806,
+        "epoch": 1.922077922077922,
+        "step": 740
+      },
+      {
+        "loss": 0.24531004428863526,
+        "epoch": 1.974025974025974,
+        "step": 760
+      },
+      {
+        "eval_loss": 0.3989304304122925,
+        "eval_accuracy": 0.8534,
+        "eval_macro_f1": 0.8152,
+        "epoch": 2.0,
+        "step": 770
+      },
+      {
+        "epoch": 2.0,
+        "step": 770
+      },
+      {
+        "eval_loss": 0.3989304304122925,
+        "eval_accuracy": 0.8534,
+        "eval_macro_f1": 0.8152,
+        "epoch": 2.0,
+        "step": 770
+      }
+    ]
+  },
+  "deployed": "onnx"
+}

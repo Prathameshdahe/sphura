@@ -1,0 +1,354 @@
+{
+ "sbi_style_statement_q2fy27.xlsx": {
+  "kind": "bank_statement",
+  "rowsParsed": 111,
+  "rowsExpected": 111,
+  "inflow": 279600.0,
+  "inflowExpected": 279600.0,
+  "outflow": 250547.44,
+  "outflowExpected": 250547.44,
+  "period": {
+   "start": "2026-07-01",
+   "end": "2026-09-30"
+  },
+  "warnings": [
+   "Skipped 6 lines above the table header (account details / preamble).",
+   "Skipped 1 row without a valid date or amount (opening/closing lines, totals or notes)."
+  ],
+  "categoriserAccuracy": 0.5045,
+  "perClass": {
+   "cash": "3/3",
+   "dining": "1/18",
+   "emi_loan": "0/3",
+   "fees": "3/3",
+   "fuel": "4/6",
+   "groceries": "13/21",
+   "investments": "3/3",
+   "rent": "3/3",
+   "salary": "3/3",
+   "shopping": "0/9",
+   "subscriptions": "0/6",
+   "transfers": "9/9",
+   "travel": "8/15",
+   "utilities": "6/9"
+  },
+  "mistakes": [
+   {
+    "text": "TO TRANSFER-UPI/DR/431480361052/KAILASH PARBAT/YESB/kailashparbat@okaxis/UPI--",
+    "expected": "dining",
+    "got": "transfers"
+   },
+   {
+    "text": "TO TRANSFER-UPI/DR/440935412972/TATA NEU/YESB/tataneu@okaxis/UPI--",
+    "expected": "shopping",
+    "got": "transfers"
+   },
+   {
+    "text": "TO TRANSFER-UPI/DR/023649963383/PARADISE BIRYANI/YESB/paradisebiryan@okaxis/UPI--",
+    "expected": "dining",
+    "got": "transfers"
+   },
+   {
+    "text": "DEBIT-ACHDr NACH56553513 SMFG INDIA CREDIT",
+    "expected": "emi_loan",
+    "got": "salary"
+   },
+   {
+    "text": "TO TRANSFER-UPI/DR/470845495883/EASYDAY CLUB/YESB/easydayclub@okaxis/UPI--",
+    "expected": "groceries",
+    "got": "transfers"
+   },
+   {
+    "text": "TO TRANSFER-UPI/DR/624329294214/GULF PETROCHEM/YESB/gulfpetrochem@okaxis/UPI--",
+    "expected": "fuel",
+    "got": "transfers"
+   },
+   {
+    "text": "TO TRANSFER-UPI/DR/611792848109/INDRIVE/YESB/indrive@ybl/UPI--",
+    "expected": "travel",
+    "got": "rent"
+   },
+   {
+    "text": "TO TRANSFER-UPI/DR/303253191144/CHUMBAK/YESB/chumbak@ybl/UPI--",
+    "expected": "shopping",
+    "got": "transfers"
+   },
+   {
+    "text": "TO TRANSFER-UPI/DR/133532190546/VIDYARTHI BHAVAN/YESB/vidyarthibhava@okaxis/UPI--",
+    "expected": "dining",
+    "got": "transfers"
+   },
+   {
+    "text": "TO TRANSFER-UPI/DR/773394933233/KUKU FM/YESB/kukufm@ybl/UPI--",
+    "expected": "subscriptions",
+    "got": "transfers"
+   },
+   {
+    "text": "TO TRANSFER-UPI/DR/209621860533/GOLI VADA PAV/YESB/golivadapav@ybl/UPI--",
+    "expected": "dining",
+    "got": "transfers"
+   },
+   {
+    "text": "TO TRANSFER-UPI/DR/018704013194/VIDYARTHI BHAVAN/YESB/vidyarthibhava@okaxis/UPI--",
+    "expected": "dining",
+    "got": "transfers"
+   }
+  ],
+  "checks": {
+   "recognised": true,
+   "allRows": true,
+   "inflow": true,
+   "outflow": true
+  }
+ },
+ "icici_style_statement_aug_sep_2026.xlsx": {
+  "kind": "bank_statement",
+  "rowsParsed": 74,
+  "rowsExpected": 74,
+  "inflow": 139100.0,
+  "inflowExpected": 139100.0,
+  "outflow": 129608.02,
+  "outflowExpected": 129608.02,
+  "period": {
+   "start": "2026-08-01",
+   "end": "2026-09-30"
+  },
+  "warnings": [
+   "Skipped 3 lines above the table header (account details / preamble).",
+   "Dates were read day-first (DD/MM/YYYY)."
+  ],
+  "categoriserAccuracy": 0.7297,
+  "perClass": {
+   "cash": "2/2",
+   "dining": "3/12",
+   "emi_loan": "2/2",
+   "fees": "2/2",
+   "fuel": "3/4",
+   "groceries": "11/14",
+   "investments": "2/2",
+   "rent": "2/2",
+   "salary": "2/2",
+   "shopping": "5/6",
+   "subscriptions": "0/4",
+   "transfers": "6/6",
+   "travel": "8/10",
+   "utilities": "6/6"
+  },
+  "mistakes": [
+   {
+    "text": "UPI/370686532705/Pay to Mad Over Donuts/madoverdonuts@ybl/YES BANK LIM/AXL39943834",
+    "expected": "dining",
+    "got": "transfers"
+   },
+   {
+    "text": "UPI/485328062181/Pay to Goli Vada Pav/golivadapav@ybl/YES BANK LIM/AXL30948453",
+    "expected": "dining",
+    "got": "transfers"
+   },
+   {
+    "text": "UPI/313388054035/Pay to Easyday Club/easydayclub@okaxis/YES BANK LIM/AXL75969633",
+    "expected": "groceries",
+    "got": "transfers"
+   },
+   {
+    "text": "UPI/243136746786/Pay to Kailash Parbat/kailashparbat@okaxis/YES BANK LIM/AXL29405032",
+    "expected": "dining",
+    "got": "transfers"
+   },
+   {
+    "text": "UPI/216447060315/Pay to Shemaroome/shemaroome@okaxis/YES BANK LIM/AXL25978630",
+    "expected": "subscriptions",
+    "got": "transfers"
+   },
+   {
+    "text": "UPI/601363379780/Pay to Goli Vada Pav/golivadapav@ybl/YES BANK LIM/AXL90618866",
+    "expected": "dining",
+    "got": "transfers"
+   },
+   {
+    "text": "UPI/752860550339/Pay to Indrive/indrive@ybl/YES BANK LIM/AXL66431460",
+    "expected": "travel",
+    "got": "shopping"
+   },
+   {
+    "text": "UPI/707706386641/Pay to Easyday Club/easydayclub@okaxis/YES BANK LIM/AXL95908538",
+    "expected": "groceries",
+    "got": "transfers"
+   },
+   {
+    "text": "UPI/537368892899/Pay to Goli Vada Pav/golivadapav@ybl/YES BANK LIM/AXL80940252",
+    "expected": "dining",
+    "got": "transfers"
+   },
+   {
+    "text": "PCD/7040/CHUMBAK/PUNE/020754",
+    "expected": "shopping",
+    "got": "travel"
+   },
+   {
+    "text": "UPI/597975979921/Pay to Shemaroome/shemaroome@okaxis/YES BANK LIM/AXL21584153",
+    "expected": "subscriptions",
+    "got": "transfers"
+   },
+   {
+    "text": "UPI/344795932948/Pay to Shemaroome/shemaroome@okaxis/YES BANK LIM/AXL77862290",
+    "expected": "subscriptions",
+    "got": "transfers"
+   }
+  ],
+  "checks": {
+   "recognised": true,
+   "allRows": true,
+   "inflow": true,
+   "outflow": true
+  }
+ },
+ "kotak_style_statement_sep_2026.xlsx": {
+  "kind": "bank_statement",
+  "rowsParsed": 37,
+  "rowsExpected": 37,
+  "inflow": 42950.0,
+  "inflowExpected": 42950.0,
+  "outflow": 57288.53,
+  "outflowExpected": 57288.53,
+  "period": {
+   "start": "2026-09-01",
+   "end": "2026-09-30"
+  },
+  "warnings": [
+   "Skipped 3 lines above the table header (account details / preamble).",
+   "Dates were read day-first (DD/MM/YYYY)."
+  ],
+  "categoriserAccuracy": 0.7568,
+  "perClass": {
+   "cash": "0/1",
+   "dining": "3/6",
+   "emi_loan": "1/1",
+   "fees": "1/1",
+   "fuel": "2/2",
+   "groceries": "7/7",
+   "investments": "1/1",
+   "rent": "1/1",
+   "salary": "1/1",
+   "shopping": "2/3",
+   "subscriptions": "1/2",
+   "transfers": "3/3",
+   "travel": "2/5",
+   "utilities": "3/3"
+  },
+  "mistakes": [
+   {
+    "text": "UPI/JUMBOKING/474406686132/UPI",
+    "expected": "dining",
+    "got": "shopping"
+   },
+   {
+    "text": "UPI/TATA NEU/430668939365/UPI",
+    "expected": "shopping",
+    "got": "transfers"
+   },
+   {
+    "text": "ATL/701080/KOCHI",
+    "expected": "cash",
+    "got": "other"
+   },
+   {
+    "text": "UPI/UTSONMOBILE/880021379041/UPI",
+    "expected": "travel",
+    "got": "transfers"
+   },
+   {
+    "text": "UPI/SHEMAROOME/644808042367/UPI",
+    "expected": "subscriptions",
+    "got": "shopping"
+   },
+   {
+    "text": "UPI/GOLI VADA PAV/771011317949/UPI",
+    "expected": "dining",
+    "got": "transfers"
+   },
+   {
+    "text": "UPI/INDRIVE/824154603818/UPI",
+    "expected": "travel",
+    "got": "transfers"
+   },
+   {
+    "text": "UPI/GOLI VADA PAV/092286829799/UPI",
+    "expected": "dining",
+    "got": "transfers"
+   },
+   {
+    "text": "UPI/UTSONMOBILE/987726951132/UPI",
+    "expected": "travel",
+    "got": "transfers"
+   }
+  ],
+  "checks": {
+   "recognised": true,
+   "allRows": true,
+   "inflow": true,
+   "outflow": true
+  }
+ },
+ "company_financials_fy26.xlsx": {
+  "kind": "balance_sheet",
+  "got": {
+   "totalAssets": 3406.15,
+   "totalLiabilities": 1439.8,
+   "equity": 1966.35,
+   "currentRatio": 1.725,
+   "quickRatio": 1.081,
+   "debtToEquity": 0.732
+  },
+  "warnings": [
+   "Skipped 3 lines above the table header (account details / preamble).",
+   "Ignored 2 subtotal/total rows (totals were recomputed from the line items).",
+   "Amounts are in crore, as stated above the table."
+  ],
+  "checks": {
+   "recognised": true,
+   "totalAssets": true,
+   "equity": true,
+   "currentRatio": true,
+   "quickRatio": true,
+   "debtToEquity": true
+  },
+  "expected": {
+   "totalAssets": 3406.15,
+   "equity": 1966.35,
+   "currentRatio": 1.725,
+   "quickRatio": 1.081,
+   "debtToEquity_liabilities": 0.732
+  }
+ },
+ "msme_bakery_balance_sheet_fy26.xlsx": {
+  "kind": "balance_sheet",
+  "got": {
+   "totalAssets": 1723300.0,
+   "totalLiabilities": 740900.0,
+   "equity": 982400.0,
+   "currentRatio": 1.522,
+   "quickRatio": 1.081,
+   "debtToEquity": 0.754
+  },
+  "warnings": [
+   "Skipped 2 lines above the table header (account details / preamble).",
+   "Ignored 2 subtotal/total rows (totals were recomputed from the line items)."
+  ],
+  "checks": {
+   "recognised": true,
+   "totalAssets": true,
+   "equity": true,
+   "currentRatio": true,
+   "quickRatio": true,
+   "debtToEquity": true
+  },
+  "expected": {
+   "totalAssets": 1723300,
+   "equity": 982400,
+   "currentRatio": 1.522,
+   "quickRatio": 1.081,
+   "debtToEquity_liabilities": 0.754
+  }
+ }
+}

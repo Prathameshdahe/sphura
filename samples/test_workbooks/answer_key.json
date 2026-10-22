@@ -1,0 +1,1685 @@
+{
+ "_about": "Fictional test workbooks; labels and totals written by the Sphura team. Bank layouts mimic SBI / ICICI / Kotak exports; merchants are absent from the categoriser's training generator.",
+ "files": {
+  "sbi_style_statement_q2fy27.xlsx": {
+   "kind": "bank_statement",
+   "rows": 111,
+   "inflow": 279600.0,
+   "outflow": 250547.44,
+   "net": 29052.56,
+   "period": [
+    "2026-07-01",
+    "2026-09-30"
+   ],
+   "byCategory": {
+    "salary": 276000.0,
+    "rent": 72000.0,
+    "groceries": 29569.28,
+    "shopping": 26826.98,
+    "emi_loan": 25350.0,
+    "travel": 21870.65,
+    "transfers": 19892.4,
+    "investments": 15000.0,
+    "utilities": 13133.25,
+    "dining": 12140.4,
+    "cash": 9000.0,
+    "fuel": 7723.04,
+    "subscriptions": 1588.34,
+    "fees": 53.1
+   },
+   "subscriptions": [
+    "HOICHOI",
+    "KUKU FM",
+    "POCKET FM",
+    "SHEMAROOME"
+   ],
+   "labels": [
+    [
+     "2026-07-01",
+     "salary",
+     "NIMBUS SOFTLABS PVT LTD",
+     92000,
+     "credit"
+    ],
+    [
+     "2026-07-01",
+     "groceries",
+     "SPAR HYPERMARKET",
+     737.68,
+     "debit"
+    ],
+    [
+     "2026-07-01",
+     "cash",
+     "VADODARA",
+     3500.0,
+     "debit"
+    ],
+    [
+     "2026-07-02",
+     "groceries",
+     "HERITAGE FRESH",
+     2246.4,
+     "debit"
+    ],
+    [
+     "2026-07-02",
+     "dining",
+     "KAILASH PARBAT",
+     727.97,
+     "debit"
+    ],
+    [
+     "2026-07-02",
+     "travel",
+     "PUNE METRO",
+     546.7,
+     "debit"
+    ],
+    [
+     "2026-07-02",
+     "utilities",
+     "PUNE MUNICIPAL WATER",
+     2097.36,
+     "debit"
+    ],
+    [
+     "2026-07-02",
+     "shopping",
+     "TATA NEU",
+     3910.14,
+     "debit"
+    ],
+    [
+     "2026-07-03",
+     "rent",
+     "SUNITA DESHPANDE",
+     24000,
+     "debit"
+    ],
+    [
+     "2026-07-03",
+     "dining",
+     "PARADISE BIRYANI",
+     308.08,
+     "debit"
+    ],
+    [
+     "2026-07-03",
+     "fuel",
+     "MRPL FUEL STATION",
+     511.53,
+     "debit"
+    ],
+    [
+     "2026-07-05",
+     "emi_loan",
+     "SMFG INDIA CREDIT",
+     8450,
+     "debit"
+    ],
+    [
+     "2026-07-05",
+     "groceries",
+     "KPN FARM FRESH",
+     2177.71,
+     "debit"
+    ],
+    [
+     "2026-07-07",
+     "groceries",
+     "NAMDHARIS FRESH",
+     437.97,
+     "debit"
+    ],
+    [
+     "2026-07-07",
+     "groceries",
+     "SPAR HYPERMARKET",
+     1409.6,
+     "debit"
+    ],
+    [
+     "2026-07-10",
+     "investments",
+     "DSP MUTUAL FUND",
+     5000,
+     "debit"
+    ],
+    [
+     "2026-07-10",
+     "groceries",
+     "EASYDAY CLUB",
+     661.22,
+     "debit"
+    ],
+    [
+     "2026-07-10",
+     "fuel",
+     "GULF PETROCHEM",
+     1241.74,
+     "debit"
+    ],
+    [
+     "2026-07-13",
+     "travel",
+     "INDRIVE",
+     355.32,
+     "debit"
+    ],
+    [
+     "2026-07-13",
+     "shopping",
+     "CHUMBAK",
+     4952.64,
+     "debit"
+    ],
+    [
+     "2026-07-14",
+     "travel",
+     "GSRTC",
+     2297.35,
+     "debit"
+    ],
+    [
+     "2026-07-16",
+     "utilities",
+     "GTPL BROADBAND",
+     761.15,
+     "debit"
+    ],
+    [
+     "2026-07-17",
+     "dining",
+     "VIDYARTHI BHAVAN",
+     840.51,
+     "debit"
+    ],
+    [
+     "2026-07-17",
+     "subscriptions",
+     "KUKU FM",
+     190.36,
+     "debit"
+    ],
+    [
+     "2026-07-19",
+     "dining",
+     "GOLI VADA PAV",
+     697.26,
+     "debit"
+    ],
+    [
+     "2026-07-19",
+     "dining",
+     "VIDYARTHI BHAVAN",
+     590.48,
+     "debit"
+    ],
+    [
+     "2026-07-22",
+     "transfers",
+     "KARAN SHAH",
+     2350.0,
+     "credit"
+    ],
+    [
+     "2026-07-22",
+     "groceries",
+     "KPN FARM FRESH",
+     1878.97,
+     "debit"
+    ],
+    [
+     "2026-07-22",
+     "transfers",
+     "VIVEK RAO",
+     3083.88,
+     "debit"
+    ],
+    [
+     "2026-07-24",
+     "utilities",
+     "GTPL BROADBAND",
+     1613.84,
+     "debit"
+    ],
+    [
+     "2026-07-25",
+     "travel",
+     "QUICK RIDE",
+     1081.97,
+     "debit"
+    ],
+    [
+     "2026-07-25",
+     "travel",
+     "GSRTC",
+     1723.48,
+     "debit"
+    ],
+    [
+     "2026-07-25",
+     "subscriptions",
+     "KUKU FM",
+     364.49,
+     "debit"
+    ],
+    [
+     "2026-07-27",
+     "dining",
+     "GOLI VADA PAV",
+     547.28,
+     "debit"
+    ],
+    [
+     "2026-07-28",
+     "transfers",
+     "KARAN SHAH",
+     3058.63,
+     "debit"
+    ],
+    [
+     "2026-07-29",
+     "shopping",
+     "HEALTHKART",
+     646.08,
+     "debit"
+    ],
+    [
+     "2026-07-30",
+     "fees",
+     "SERVICE CHARGES GST",
+     17.7,
+     "debit"
+    ],
+    [
+     "2026-08-01",
+     "salary",
+     "NIMBUS SOFTLABS PVT LTD",
+     92000,
+     "credit"
+    ],
+    [
+     "2026-08-01",
+     "travel",
+     "GSRTC",
+     416.02,
+     "debit"
+    ],
+    [
+     "2026-08-01",
+     "subscriptions",
+     "HOICHOI",
+     304.94,
+     "debit"
+    ],
+    [
+     "2026-08-02",
+     "groceries",
+     "HERITAGE FRESH",
+     1587.46,
+     "debit"
+    ],
+    [
+     "2026-08-02",
+     "shopping",
+     "CAMPUS SHOES",
+     2049.78,
+     "debit"
+    ],
+    [
+     "2026-08-03",
+     "rent",
+     "SUNITA DESHPANDE",
+     24000,
+     "debit"
+    ],
+    [
+     "2026-08-03",
+     "transfers",
+     "VIVEK RAO",
+     2359.86,
+     "debit"
+    ],
+    [
+     "2026-08-04",
+     "fuel",
+     "MRPL FUEL STATION",
+     2168.81,
+     "debit"
+    ],
+    [
+     "2026-08-04",
+     "shopping",
+     "HEALTHKART",
+     4564.36,
+     "debit"
+    ],
+    [
+     "2026-08-05",
+     "emi_loan",
+     "SMFG INDIA CREDIT",
+     8450,
+     "debit"
+    ],
+    [
+     "2026-08-05",
+     "transfers",
+     "VIVEK RAO",
+     2625.9,
+     "debit"
+    ],
+    [
+     "2026-08-06",
+     "shopping",
+     "CHUMBAK",
+     2214.82,
+     "debit"
+    ],
+    [
+     "2026-08-09",
+     "groceries",
+     "EASYDAY CLUB",
+     1114.68,
+     "debit"
+    ],
+    [
+     "2026-08-09",
+     "travel",
+     "GSRTC",
+     1679.66,
+     "debit"
+    ],
+    [
+     "2026-08-10",
+     "investments",
+     "DSP MUTUAL FUND",
+     5000,
+     "debit"
+    ],
+    [
+     "2026-08-10",
+     "travel",
+     "QUICK RIDE",
+     1150.05,
+     "debit"
+    ],
+    [
+     "2026-08-13",
+     "subscriptions",
+     "POCKET FM",
+     314.69,
+     "debit"
+    ],
+    [
+     "2026-08-16",
+     "utilities",
+     "PUNE MUNICIPAL WATER",
+     609.39,
+     "debit"
+    ],
+    [
+     "2026-08-17",
+     "dining",
+     "KAILASH PARBAT",
+     348.0,
+     "debit"
+    ],
+    [
+     "2026-08-17",
+     "utilities",
+     "JVVNL",
+     1575.93,
+     "debit"
+    ],
+    [
+     "2026-08-18",
+     "dining",
+     "MAD OVER DONUTS",
+     1191.76,
+     "debit"
+    ],
+    [
+     "2026-08-20",
+     "groceries",
+     "HERITAGE FRESH",
+     1730.49,
+     "debit"
+    ],
+    [
+     "2026-08-22",
+     "groceries",
+     "NAMDHARIS FRESH",
+     2336.73,
+     "debit"
+    ],
+    [
+     "2026-08-22",
+     "dining",
+     "MAD OVER DONUTS",
+     478.44,
+     "debit"
+    ],
+    [
+     "2026-08-23",
+     "groceries",
+     "HERITAGE FRESH",
+     1792.28,
+     "debit"
+    ],
+    [
+     "2026-08-24",
+     "groceries",
+     "FOODHALL",
+     228.41,
+     "debit"
+    ],
+    [
+     "2026-08-24",
+     "dining",
+     "GOLI VADA PAV",
+     574.74,
+     "debit"
+    ],
+    [
+     "2026-08-24",
+     "utilities",
+     "MGVCL",
+     2381.71,
+     "debit"
+    ],
+    [
+     "2026-08-25",
+     "groceries",
+     "EASYDAY CLUB",
+     1946.87,
+     "debit"
+    ],
+    [
+     "2026-08-25",
+     "travel",
+     "UTSONMOBILE",
+     2376.43,
+     "debit"
+    ],
+    [
+     "2026-08-25",
+     "cash",
+     "JAIPUR",
+     3500.0,
+     "debit"
+    ],
+    [
+     "2026-08-27",
+     "travel",
+     "INDRIVE",
+     1909.57,
+     "debit"
+    ],
+    [
+     "2026-08-28",
+     "transfers",
+     "ANKIT VERMA",
+     550.0,
+     "credit"
+    ],
+    [
+     "2026-08-30",
+     "fees",
+     "SERVICE CHARGES GST",
+     17.7,
+     "debit"
+    ],
+    [
+     "2026-08-30",
+     "dining",
+     "GOLI VADA PAV",
+     1048.1,
+     "debit"
+    ],
+    [
+     "2026-08-30",
+     "fuel",
+     "INDUS PETRO",
+     1363.78,
+     "debit"
+    ],
+    [
+     "2026-08-31",
+     "dining",
+     "KAILASH PARBAT",
+     523.97,
+     "debit"
+    ],
+    [
+     "2026-09-01",
+     "salary",
+     "NIMBUS SOFTLABS PVT LTD",
+     92000,
+     "credit"
+    ],
+    [
+     "2026-09-02",
+     "travel",
+     "PUNE METRO",
+     2207.32,
+     "debit"
+    ],
+    [
+     "2026-09-03",
+     "rent",
+     "SUNITA DESHPANDE",
+     24000,
+     "debit"
+    ],
+    [
+     "2026-09-05",
+     "emi_loan",
+     "SMFG INDIA CREDIT",
+     8450,
+     "debit"
+    ],
+    [
+     "2026-09-05",
+     "shopping",
+     "HEALTHKART",
+     1596.65,
+     "debit"
+    ],
+    [
+     "2026-09-07",
+     "transfers",
+     "NEHA IYER",
+     700.0,
+     "credit"
+    ],
+    [
+     "2026-09-07",
+     "cash",
+     "JAIPUR",
+     2000.0,
+     "debit"
+    ],
+    [
+     "2026-09-08",
+     "groceries",
+     "KPN FARM FRESH",
+     1278.08,
+     "debit"
+    ],
+    [
+     "2026-09-10",
+     "investments",
+     "DSP MUTUAL FUND",
+     5000,
+     "debit"
+    ],
+    [
+     "2026-09-10",
+     "groceries",
+     "FOODHALL",
+     983.91,
+     "debit"
+    ],
+    [
+     "2026-09-10",
+     "dining",
+     "MAD OVER DONUTS",
+     281.36,
+     "debit"
+    ],
+    [
+     "2026-09-10",
+     "subscriptions",
+     "SHEMAROOME",
+     268.32,
+     "debit"
+    ],
+    [
+     "2026-09-11",
+     "dining",
+     "MAD OVER DONUTS",
+     588.19,
+     "debit"
+    ],
+    [
+     "2026-09-11",
+     "fuel",
+     "SRI VENKATESHWARA FUELS",
+     824.4,
+     "debit"
+    ],
+    [
+     "2026-09-12",
+     "utilities",
+     "SPECTRA BROADBAND",
+     1655.08,
+     "debit"
+    ],
+    [
+     "2026-09-13",
+     "travel",
+     "GSRTC",
+     1854.05,
+     "debit"
+    ],
+    [
+     "2026-09-14",
+     "groceries",
+     "SPAR HYPERMARKET",
+     1154.31,
+     "debit"
+    ],
+    [
+     "2026-09-16",
+     "groceries",
+     "EASYDAY CLUB",
+     2502.73,
+     "debit"
+    ],
+    [
+     "2026-09-16",
+     "dining",
+     "PARADISE BIRYANI",
+     1070.72,
+     "debit"
+    ],
+    [
+     "2026-09-17",
+     "travel",
+     "PUNE METRO",
+     1781.26,
+     "debit"
+    ],
+    [
+     "2026-09-17",
+     "utilities",
+     "SPECTRA BROADBAND",
+     2024.58,
+     "debit"
+    ],
+    [
+     "2026-09-18",
+     "dining",
+     "VIDYARTHI BHAVAN",
+     883.53,
+     "debit"
+    ],
+    [
+     "2026-09-18",
+     "dining",
+     "PARADISE BIRYANI",
+     618.69,
+     "debit"
+    ],
+    [
+     "2026-09-18",
+     "utilities",
+     "JVVNL",
+     414.21,
+     "debit"
+    ],
+    [
+     "2026-09-21",
+     "groceries",
+     "EASYDAY CLUB",
+     301.94,
+     "debit"
+    ],
+    [
+     "2026-09-22",
+     "travel",
+     "INDRIVE",
+     237.99,
+     "debit"
+    ],
+    [
+     "2026-09-22",
+     "fuel",
+     "MRPL FUEL STATION",
+     1612.78,
+     "debit"
+    ],
+    [
+     "2026-09-22",
+     "shopping",
+     "HEALTHKART",
+     2148.37,
+     "debit"
+    ],
+    [
+     "2026-09-23",
+     "shopping",
+     "TATA NEU",
+     4744.14,
+     "debit"
+    ],
+    [
+     "2026-09-23",
+     "transfers",
+     "NEHA IYER",
+     3305.88,
+     "debit"
+    ],
+    [
+     "2026-09-24",
+     "groceries",
+     "HERITAGE FRESH",
+     633.38,
+     "debit"
+    ],
+    [
+     "2026-09-24",
+     "dining",
+     "PARADISE BIRYANI",
+     821.32,
+     "debit"
+    ],
+    [
+     "2026-09-26",
+     "transfers",
+     "KARAN SHAH",
+     1858.25,
+     "debit"
+    ],
+    [
+     "2026-09-27",
+     "travel",
+     "INDRIVE",
+     2253.48,
+     "debit"
+    ],
+    [
+     "2026-09-29",
+     "fees",
+     "SERVICE CHARGES GST",
+     17.7,
+     "debit"
+    ],
+    [
+     "2026-09-29",
+     "groceries",
+     "SPAR HYPERMARKET",
+     2428.46,
+     "debit"
+    ],
+    [
+     "2026-09-30",
+     "subscriptions",
+     "HOICHOI",
+     145.54,
+     "debit"
+    ]
+   ]
+  },
+  "icici_style_statement_aug_sep_2026.xlsx": {
+   "kind": "bank_statement",
+   "rows": 74,
+   "inflow": 139100.0,
+   "outflow": 129608.02,
+   "net": 9491.98,
+   "period": [
+    "2026-08-01",
+    "2026-09-30"
+   ],
+   "byCategory": {
+    "salary": 137000.0,
+    "rent": 33000.0,
+    "shopping": 16201.39,
+    "groceries": 14154.64,
+    "travel": 12210.45,
+    "emi_loan": 10240.0,
+    "transfers": 8963.12,
+    "dining": 8834.14,
+    "cash": 8000.0,
+    "fuel": 6816.18,
+    "utilities": 6408.52,
+    "investments": 6000.0,
+    "subscriptions": 844.18,
+    "fees": 35.4
+   },
+   "subscriptions": [
+    "JIOSAAVN PRO",
+    "SHEMAROOME"
+   ],
+   "labels": [
+    [
+     "2026-08-01",
+     "salary",
+     "KESTREL DATA SYSTEMS",
+     68500,
+     "credit"
+    ],
+    [
+     "2026-08-03",
+     "rent",
+     "MOHAN JOSHI",
+     16500,
+     "debit"
+    ],
+    [
+     "2026-08-03",
+     "dining",
+     "MAD OVER DONUTS",
+     558.62,
+     "debit"
+    ],
+    [
+     "2026-08-04",
+     "dining",
+     "GOLI VADA PAV",
+     823.7,
+     "debit"
+    ],
+    [
+     "2026-08-04",
+     "travel",
+     "QUICK RIDE",
+     1669.23,
+     "debit"
+    ],
+    [
+     "2026-08-04",
+     "travel",
+     "QUICK RIDE",
+     1046.34,
+     "debit"
+    ],
+    [
+     "2026-08-05",
+     "emi_loan",
+     "IIFL FINANCE",
+     5120,
+     "debit"
+    ],
+    [
+     "2026-08-05",
+     "groceries",
+     "KPN FARM FRESH",
+     204.14,
+     "debit"
+    ],
+    [
+     "2026-08-09",
+     "groceries",
+     "SPAR HYPERMARKET",
+     465.34,
+     "debit"
+    ],
+    [
+     "2026-08-10",
+     "investments",
+     "TATA MUTUAL FUND",
+     3000,
+     "debit"
+    ],
+    [
+     "2026-08-12",
+     "travel",
+     "GSRTC",
+     1332.63,
+     "debit"
+    ],
+    [
+     "2026-08-13",
+     "groceries",
+     "EASYDAY CLUB",
+     1492.2,
+     "debit"
+    ],
+    [
+     "2026-08-13",
+     "travel",
+     "QUICK RIDE",
+     722.94,
+     "debit"
+    ],
+    [
+     "2026-08-14",
+     "dining",
+     "KAILASH PARBAT",
+     1302.61,
+     "debit"
+    ],
+    [
+     "2026-08-14",
+     "utilities",
+     "PUNE MUNICIPAL WATER",
+     2379.05,
+     "debit"
+    ],
+    [
+     "2026-08-14",
+     "utilities",
+     "PUNE MUNICIPAL WATER",
+     346.05,
+     "debit"
+    ],
+    [
+     "2026-08-14",
+     "transfers",
+     "KARAN SHAH",
+     1724.78,
+     "debit"
+    ],
+    [
+     "2026-08-15",
+     "fuel",
+     "GULF PETROCHEM",
+     2193.59,
+     "debit"
+    ],
+    [
+     "2026-08-15",
+     "shopping",
+     "SHOPCLUES",
+     927.03,
+     "debit"
+    ],
+    [
+     "2026-08-16",
+     "shopping",
+     "SHOPCLUES",
+     2125.39,
+     "debit"
+    ],
+    [
+     "2026-08-16",
+     "subscriptions",
+     "SHEMAROOME",
+     354.34,
+     "debit"
+    ],
+    [
+     "2026-08-17",
+     "transfers",
+     "NEHA IYER",
+     1400.0,
+     "credit"
+    ],
+    [
+     "2026-08-17",
+     "dining",
+     "GOLI VADA PAV",
+     590.31,
+     "debit"
+    ],
+    [
+     "2026-08-17",
+     "cash",
+     "VADODARA",
+     4500.0,
+     "debit"
+    ],
+    [
+     "2026-08-18",
+     "groceries",
+     "KPN FARM FRESH",
+     2106.05,
+     "debit"
+    ],
+    [
+     "2026-08-18",
+     "groceries",
+     "SPAR HYPERMARKET",
+     899.34,
+     "debit"
+    ],
+    [
+     "2026-08-18",
+     "dining",
+     "PARADISE BIRYANI",
+     1205.66,
+     "debit"
+    ],
+    [
+     "2026-08-19",
+     "travel",
+     "INDRIVE",
+     1419.24,
+     "debit"
+    ],
+    [
+     "2026-08-22",
+     "utilities",
+     "PUNE MUNICIPAL WATER",
+     1508.79,
+     "debit"
+    ],
+    [
+     "2026-08-24",
+     "groceries",
+     "EASYDAY CLUB",
+     586.12,
+     "debit"
+    ],
+    [
+     "2026-08-25",
+     "dining",
+     "GOLI VADA PAV",
+     1083.59,
+     "debit"
+    ],
+    [
+     "2026-08-25",
+     "fuel",
+     "MRPL FUEL STATION",
+     1549.31,
+     "debit"
+    ],
+    [
+     "2026-08-28",
+     "groceries",
+     "HERITAGE FRESH",
+     928.85,
+     "debit"
+    ],
+    [
+     "2026-08-28",
+     "transfers",
+     "PRIYA NAIR",
+     680.36,
+     "debit"
+    ],
+    [
+     "2026-08-29",
+     "shopping",
+     "CHUMBAK",
+     1025.54,
+     "debit"
+    ],
+    [
+     "2026-08-30",
+     "fees",
+     "SERVICE CHARGES GST",
+     17.7,
+     "debit"
+    ],
+    [
+     "2026-08-30",
+     "subscriptions",
+     "SHEMAROOME",
+     141.3,
+     "debit"
+    ],
+    [
+     "2026-09-01",
+     "salary",
+     "KESTREL DATA SYSTEMS",
+     68500,
+     "credit"
+    ],
+    [
+     "2026-09-02",
+     "groceries",
+     "HERITAGE FRESH",
+     584.49,
+     "debit"
+    ],
+    [
+     "2026-09-03",
+     "rent",
+     "MOHAN JOSHI",
+     16500,
+     "debit"
+    ],
+    [
+     "2026-09-03",
+     "subscriptions",
+     "SHEMAROOME",
+     120.66,
+     "debit"
+    ],
+    [
+     "2026-09-03",
+     "transfers",
+     "PRIYA NAIR",
+     3649.08,
+     "debit"
+    ],
+    [
+     "2026-09-04",
+     "groceries",
+     "KPN FARM FRESH",
+     1025.85,
+     "debit"
+    ],
+    [
+     "2026-09-04",
+     "dining",
+     "PARADISE BIRYANI",
+     800.93,
+     "debit"
+    ],
+    [
+     "2026-09-04",
+     "travel",
+     "GSRTC",
+     1637.16,
+     "debit"
+    ],
+    [
+     "2026-09-05",
+     "emi_loan",
+     "IIFL FINANCE",
+     5120,
+     "debit"
+    ],
+    [
+     "2026-09-05",
+     "travel",
+     "QUICK RIDE",
+     526.7,
+     "debit"
+    ],
+    [
+     "2026-09-09",
+     "groceries",
+     "KPN FARM FRESH",
+     1011.24,
+     "debit"
+    ],
+    [
+     "2026-09-09",
+     "dining",
+     "MAD OVER DONUTS",
+     142.11,
+     "debit"
+    ],
+    [
+     "2026-09-10",
+     "investments",
+     "TATA MUTUAL FUND",
+     3000,
+     "debit"
+    ],
+    [
+     "2026-09-12",
+     "subscriptions",
+     "JIOSAAVN PRO",
+     227.88,
+     "debit"
+    ],
+    [
+     "2026-09-13",
+     "shopping",
+     "SHOPCLUES",
+     4148.66,
+     "debit"
+    ],
+    [
+     "2026-09-16",
+     "dining",
+     "MAD OVER DONUTS",
+     210.78,
+     "debit"
+    ],
+    [
+     "2026-09-17",
+     "transfers",
+     "PRIYA NAIR",
+     700.0,
+     "credit"
+    ],
+    [
+     "2026-09-17",
+     "travel",
+     "UTSONMOBILE",
+     2289.14,
+     "debit"
+    ],
+    [
+     "2026-09-17",
+     "cash",
+     "VADODARA",
+     3500.0,
+     "debit"
+    ],
+    [
+     "2026-09-19",
+     "utilities",
+     "JVVNL",
+     655.98,
+     "debit"
+    ],
+    [
+     "2026-09-20",
+     "utilities",
+     "GTPL BROADBAND",
+     1084.8,
+     "debit"
+    ],
+    [
+     "2026-09-20",
+     "shopping",
+     "TATA NEU",
+     4736.07,
+     "debit"
+    ],
+    [
+     "2026-09-21",
+     "travel",
+     "PUNE METRO",
+     75.62,
+     "debit"
+    ],
+    [
+     "2026-09-22",
+     "dining",
+     "VIDYARTHI BHAVAN",
+     1309.12,
+     "debit"
+    ],
+    [
+     "2026-09-24",
+     "groceries",
+     "SPAR HYPERMARKET",
+     1387.83,
+     "debit"
+    ],
+    [
+     "2026-09-24",
+     "travel",
+     "PUNE METRO",
+     1491.45,
+     "debit"
+    ],
+    [
+     "2026-09-24",
+     "utilities",
+     "GTPL BROADBAND",
+     433.85,
+     "debit"
+    ],
+    [
+     "2026-09-25",
+     "dining",
+     "KAILASH PARBAT",
+     665.93,
+     "debit"
+    ],
+    [
+     "2026-09-26",
+     "shopping",
+     "CAMPUS SHOES",
+     3238.7,
+     "debit"
+    ],
+    [
+     "2026-09-27",
+     "groceries",
+     "FOODHALL",
+     638.72,
+     "debit"
+    ],
+    [
+     "2026-09-27",
+     "fuel",
+     "INDUS PETRO",
+     2308.58,
+     "debit"
+    ],
+    [
+     "2026-09-28",
+     "groceries",
+     "SPAR HYPERMARKET",
+     759.23,
+     "debit"
+    ],
+    [
+     "2026-09-28",
+     "groceries",
+     "KPN FARM FRESH",
+     2065.24,
+     "debit"
+    ],
+    [
+     "2026-09-28",
+     "dining",
+     "KAILASH PARBAT",
+     140.78,
+     "debit"
+    ],
+    [
+     "2026-09-29",
+     "fees",
+     "SERVICE CHARGES GST",
+     17.7,
+     "debit"
+    ],
+    [
+     "2026-09-29",
+     "fuel",
+     "GULF PETROCHEM",
+     764.7,
+     "debit"
+    ],
+    [
+     "2026-09-30",
+     "transfers",
+     "KARAN SHAH",
+     808.9,
+     "debit"
+    ]
+   ]
+  },
+  "kotak_style_statement_sep_2026.xlsx": {
+   "kind": "bank_statement",
+   "rows": 37,
+   "inflow": 42950.0,
+   "outflow": 57288.53,
+   "net": -14338.53,
+   "period": [
+    "2026-09-01",
+    "2026-09-30"
+   ],
+   "byCategory": {
+    "salary": 41000.0,
+    "groceries": 10843.66,
+    "rent": 9500.0,
+    "shopping": 7091.23,
+    "transfers": 6440.75,
+    "travel": 6018.19,
+    "dining": 5626.65,
+    "utilities": 4152.13,
+    "fuel": 3287.56,
+    "cash": 2500.0,
+    "emi_loan": 2310.0,
+    "investments": 1000.0,
+    "subscriptions": 450.66,
+    "fees": 17.7
+   },
+   "subscriptions": [
+    "JIOSAAVN PRO",
+    "SHEMAROOME"
+   ],
+   "labels": [
+    [
+     "2026-09-01",
+     "salary",
+     "ORBIT LEARNING FOUNDATION",
+     41000,
+     "credit"
+    ],
+    [
+     "2026-09-01",
+     "utilities",
+     "SPECTRA BROADBAND",
+     1066.52,
+     "debit"
+    ],
+    [
+     "2026-09-02",
+     "groceries",
+     "SPAR HYPERMARKET",
+     2232.13,
+     "debit"
+    ],
+    [
+     "2026-09-02",
+     "dining",
+     "JUMBOKING",
+     1298.12,
+     "debit"
+    ],
+    [
+     "2026-09-02",
+     "fuel",
+     "MRPL FUEL STATION",
+     2183.77,
+     "debit"
+    ],
+    [
+     "2026-09-03",
+     "rent",
+     "LALITHA AMMA",
+     9500,
+     "debit"
+    ],
+    [
+     "2026-09-03",
+     "groceries",
+     "NAMDHARIS FRESH",
+     1242.71,
+     "debit"
+    ],
+    [
+     "2026-09-04",
+     "dining",
+     "PARADISE BIRYANI",
+     345.19,
+     "debit"
+    ],
+    [
+     "2026-09-05",
+     "emi_loan",
+     "UJJIVAN SFB",
+     2310,
+     "debit"
+    ],
+    [
+     "2026-09-06",
+     "shopping",
+     "TATA NEU",
+     3603.29,
+     "debit"
+    ],
+    [
+     "2026-09-06",
+     "cash",
+     "KOCHI",
+     2500.0,
+     "debit"
+    ],
+    [
+     "2026-09-09",
+     "dining",
+     "VIDYARTHI BHAVAN",
+     784.64,
+     "debit"
+    ],
+    [
+     "2026-09-10",
+     "investments",
+     "EDELWEISS MF",
+     1000,
+     "debit"
+    ],
+    [
+     "2026-09-10",
+     "travel",
+     "GSRTC",
+     1261.53,
+     "debit"
+    ],
+    [
+     "2026-09-10",
+     "shopping",
+     "HEALTHKART",
+     2023.93,
+     "debit"
+    ],
+    [
+     "2026-09-14",
+     "groceries",
+     "HERITAGE FRESH",
+     1642.38,
+     "debit"
+    ],
+    [
+     "2026-09-15",
+     "groceries",
+     "SPAR HYPERMARKET",
+     2508.55,
+     "debit"
+    ],
+    [
+     "2026-09-16",
+     "travel",
+     "UTSONMOBILE",
+     605.13,
+     "debit"
+    ],
+    [
+     "2026-09-16",
+     "subscriptions",
+     "SHEMAROOME",
+     194.17,
+     "debit"
+    ],
+    [
+     "2026-09-18",
+     "groceries",
+     "KPN FARM FRESH",
+     219.15,
+     "debit"
+    ],
+    [
+     "2026-09-18",
+     "utilities",
+     "GTPL BROADBAND",
+     2329.51,
+     "debit"
+    ],
+    [
+     "2026-09-18",
+     "utilities",
+     "PUNE MUNICIPAL WATER",
+     756.1,
+     "debit"
+    ],
+    [
+     "2026-09-18",
+     "subscriptions",
+     "JIOSAAVN PRO",
+     256.49,
+     "debit"
+    ],
+    [
+     "2026-09-21",
+     "dining",
+     "VIDYARTHI BHAVAN",
+     1265.19,
+     "debit"
+    ],
+    [
+     "2026-09-21",
+     "dining",
+     "GOLI VADA PAV",
+     1364.62,
+     "debit"
+    ],
+    [
+     "2026-09-21",
+     "travel",
+     "INDRIVE",
+     518.69,
+     "debit"
+    ],
+    [
+     "2026-09-23",
+     "groceries",
+     "NAMDHARIS FRESH",
+     2326.06,
+     "debit"
+    ],
+    [
+     "2026-09-23",
+     "transfers",
+     "KARAN SHAH",
+     3806.59,
+     "debit"
+    ],
+    [
+     "2026-09-24",
+     "fuel",
+     "SRI VENKATESHWARA FUELS",
+     1103.79,
+     "debit"
+    ],
+    [
+     "2026-09-25",
+     "dining",
+     "GOLI VADA PAV",
+     568.89,
+     "debit"
+    ],
+    [
+     "2026-09-26",
+     "travel",
+     "PUNE METRO",
+     2292.52,
+     "debit"
+    ],
+    [
+     "2026-09-27",
+     "groceries",
+     "HERITAGE FRESH",
+     672.68,
+     "debit"
+    ],
+    [
+     "2026-09-27",
+     "shopping",
+     "CAMPUS SHOES",
+     1464.01,
+     "debit"
+    ],
+    [
+     "2026-09-28",
+     "transfers",
+     "NEHA IYER",
+     1950.0,
+     "credit"
+    ],
+    [
+     "2026-09-29",
+     "fees",
+     "SERVICE CHARGES GST",
+     17.7,
+     "debit"
+    ],
+    [
+     "2026-09-30",
+     "travel",
+     "UTSONMOBILE",
+     1340.32,
+     "debit"
+    ],
+    [
+     "2026-09-30",
+     "transfers",
+     "NEHA IYER",
+     684.16,
+     "debit"
+    ]
+   ]
+  },
+  "company_financials_fy26.xlsx": {
+   "kind": "balance_sheet",
+   "unit": "INR crore",
+   "column": "As at 31 March 2026",
+   "totalAssets": 3406.15,
+   "totalLiabilities": 1439.8,
+   "equity": 1966.35,
+   "currentRatio": 1.725,
+   "quickRatio": 1.081,
+   "debtToEquity_liabilities": 0.732,
+   "debtToEquity_borrowings": 0.282,
+   "netProfitMargin_pct": 6.45,
+   "note": "Two year columns: the analyser should use FY26 (the first). The P&L is on sheet 2."
+  },
+  "msme_bakery_balance_sheet_fy26.xlsx": {
+   "kind": "balance_sheet",
+   "unit": "INR",
+   "totalAssets": 1723300,
+   "totalLiabilities": 740900,
+   "equity": 982400,
+   "currentRatio": 1.522,
+   "quickRatio": 1.081,
+   "debtToEquity_liabilities": 0.754,
+   "note": "Proprietorship layout: capital + profit - drawings is equity; overdraft is current."
+  }
+ }
+}

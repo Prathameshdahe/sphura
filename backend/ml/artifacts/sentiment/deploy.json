@@ -1,0 +1,6 @@
+{
+  "backend": "onnx",
+  "onnxAccuracy": 0.8675,
+  "sklearnAccuracy": 0.8088,
+  "reason": "held-out test accuracy: DistilBERT ONNX 0.8675 vs sklearn 0.8088; the app loads the winner and falls back to the other"
+}

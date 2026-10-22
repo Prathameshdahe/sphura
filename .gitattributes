@@ -1,0 +1,15 @@
+# Normalise text files to LF in the repository; check out with the platform's line endings.
+* text=auto
+
+# Binary artefacts: never diff or convert.
+*.onnx   binary
+*.joblib binary
+*.xlsx   binary
+*.png    binary
+*.jpg    binary
+*.ico    binary
+
+# Keep generated datasets and lockfiles out of the language statistics.
+backend/ml/data/**        linguist-generated
+training/data/**          linguist-generated
+frontend/package-lock.json linguist-generated

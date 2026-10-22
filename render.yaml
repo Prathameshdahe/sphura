@@ -1,0 +1,53 @@
+# Render Blueprint for the Sphura API (Docker): Render → New → Blueprint → pick this repo.
+# The frontend deploys separately on Vercel (frontend/vercel.json).
+#
+# Memory: the API keeps an embedding model, a reranker, the NLI verifier and two ONNX classifiers in RAM
+# (~1 GB). Use the "standard" plan (2 GB) or larger; the free 512 MB plan will be killed at start-up.
+# Secrets marked `sync: false` are entered once in the Render dashboard and never stored in git.
+services:
+  - type: web
+    name: sphura-api
+    runtime: docker
+    rootDir: backend
+    dockerfilePath: ./Dockerfile
+    plan: standard
+    region: singapore
+    healthCheckPath: /api/health
+    envVars:
+      - key: ENVIRONMENT
+        value: production
+      - key: JWT_SECRET
+        generateValue: true
+      # Supabase Postgres "Session pooler" URI (postgresql://…:5432/postgres)
+      - key: DATABASE_URL
+        sync: false
+      # Qdrant Cloud (free 1 GB cluster) so document vectors survive restarts; empty = embedded, lost on redeploy
+      - key: QDRANT_URL
+        sync: false
+      - key: QDRANT_API_KEY
+        sync: false
+      # The Vercel site, e.g. https://sphura.vercel.app (comma-separate several)
+      - key: CORS_ORIGINS
+        sync: false
+      - key: COOKIE_SECURE
+        value: "true"
+      # "lax" with the /api rewrite in frontend/vercel.json (recommended); "none" if the frontend calls this
+      # service directly through VITE_API_URL
+      - key: COOKIE_SAMESITE
+        value: lax
+      - key: GROQ_API_KEY
+        sync: false
+      - key: NVIDIA_API_KEY
+        sync: false
+      - key: TAVILY_API_KEY
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_PUBLISHABLE_KEY
+        sync: false
+      - key: ADMIN_EMAILS
+        sync: false
+      - key: DEFAULT_MODEL
+        value: ensemble:sphura

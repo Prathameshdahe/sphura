@@ -1,0 +1,96 @@
+{
+  "key": "sentiment",
+  "name": "Financial sentiment (sklearn fallback)",
+  "task": "3-way sentiment of finance headlines / sentences",
+  "model": "TF-IDF (word 1-2 + char 2-5 grams) + logistic regression",
+  "trainedAt": "2026-10-22T13:41:45Z",
+  "dataset": {
+    "name": "Financial PhraseBank (sentences_50agree) + Twitter Financial News Sentiment",
+    "license": "PhraseBank CC BY-NC-SA 3.0 (academic use); TFNS MIT",
+    "train": 12296,
+    "test": 2861,
+    "note": "test = PhraseBank 10 % stratified hold-out + the official TFNS validation file; see ml/data/README.md"
+  },
+  "metrics": {
+    "accuracy": 0.8088,
+    "macroF1": 0.7519
+  },
+  "baseline": {
+    "name": "Lexicon (app.features.market.sentiment)",
+    "accuracy": 0.6928,
+    "macroF1": 0.5791
+  },
+  "labels": [
+    "negative",
+    "neutral",
+    "positive"
+  ],
+  "perClass": [
+    {
+      "label": "negative",
+      "precision": 0.6376,
+      "recall": 0.6847,
+      "f1": 0.6603,
+      "support": 406
+    },
+    {
+      "label": "neutral",
+      "precision": 0.88,
+      "recall": 0.8633,
+      "f1": 0.8716,
+      "support": 1844
+    },
+    {
+      "label": "positive",
+      "precision": 0.7208,
+      "recall": 0.7267,
+      "f1": 0.7237,
+      "support": 611
+    }
+  ],
+  "confusion": [
+    [
+      278,
+      92,
+      36
+    ],
+    [
+      116,
+      1592,
+      136
+    ],
+    [
+      42,
+      125,
+      444
+    ]
+  ],
+  "extras": {
+    "fpbAccuracy": 0.7459,
+    "fpbMacroF1": 0.7045,
+    "tfnsAccuracy": 0.8216,
+    "tfnsMacroF1": 0.7632,
+    "bestC": 4.0,
+    "trainingSeconds": 106.4005
+  },
+  "ablation": [
+    {
+      "name": "Lexicon (app.features.market.sentiment)",
+      "accuracy": 0.6928,
+      "macroF1": 0.5791,
+      "fpbAccuracy": 0.6612,
+      "fpbMacroF1": 0.5125,
+      "tfnsAccuracy": 0.6992,
+      "tfnsMacroF1": 0.5915
+    },
+    {
+      "name": "TF-IDF (word 1-2 + char 2-5 grams) + logistic regression",
+      "accuracy": 0.8088,
+      "macroF1": 0.7519,
+      "fpbAccuracy": 0.7459,
+      "fpbMacroF1": 0.7045,
+      "tfnsAccuracy": 0.8216,
+      "tfnsMacroF1": 0.7632
+    }
+  ]
+}

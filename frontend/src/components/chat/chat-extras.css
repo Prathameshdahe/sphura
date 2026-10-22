@@ -1,0 +1,79 @@
+/* Claim highlights (CSS Custom Highlight API, see lib/verification.ts). Subtle underline + faint wash.
+   ::highlight() can't read custom properties reliably, so the palette is spelled out: success #2F7D5B,
+   warning #B8860B, primary #7c3aed, soft rose #e9d5ff (dark variants one step lighter). */
+::highlight(sphura-claim-supported) {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 2px;
+    text-decoration-color: rgb(47 125 91 / 0.75);
+    text-underline-offset: 4px;
+    background-color: rgb(47 125 91 / 0.08);
+}
+::highlight(sphura-claim-partial) {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 2px;
+    text-decoration-color: rgb(184 134 11 / 0.8);
+    text-underline-offset: 4px;
+    background-color: rgb(184 134 11 / 0.08);
+}
+::highlight(sphura-claim-unsupported) {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 1.5px;
+    text-decoration-color: rgb(180 68 70 / 0.85);
+    text-underline-offset: 4px;
+    background-color: rgb(180 68 70 / 0.09);
+}
+::highlight(sphura-claim-uncited) {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 2px;
+    text-decoration-color: rgb(138 115 120 / 0.6);
+    text-underline-offset: 4px;
+}
+::highlight(sphura-claim-focus) {
+    background-color: rgb(252 143 143 / 0.38);
+}
+
+.dark ::highlight(sphura-claim-supported) {
+    text-decoration-color: rgb(91 191 142 / 0.75);
+    background-color: rgb(91 191 142 / 0.09);
+}
+.dark ::highlight(sphura-claim-partial) {
+    text-decoration-color: rgb(224 179 65 / 0.8);
+    background-color: rgb(224 179 65 / 0.07);
+}
+.dark ::highlight(sphura-claim-unsupported) {
+    text-decoration-color: rgb(224 105 107 / 0.85);
+    background-color: rgb(224 105 107 / 0.1);
+}
+.dark ::highlight(sphura-claim-uncited) {
+    text-decoration-color: rgb(181 159 163 / 0.55);
+}
+.dark ::highlight(sphura-claim-focus) {
+    background-color: rgb(252 143 143 / 0.3);
+}
+
+/* Report TOC jump target */
+.sphura-prose h2 {
+    scroll-margin-top: 1rem;
+}
+.sphura-prose h2.sphura-flash {
+    animation: sphura-flash 1.4s ease-out;
+    border-radius: 6px;
+}
+@keyframes sphura-flash {
+    0%,
+    30% {
+        background-color: color-mix(in oklch, var(--accent-soft) 30%, transparent);
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .sphura-prose h2.sphura-flash {
+        animation: none;
+    }
+}

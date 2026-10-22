@@ -1,0 +1,250 @@
+{
+  "available": true,
+  "runAt": "2026-10-21T19:56:16Z",
+  "dataset": {
+    "name": "Sphura RAG-Bench v1",
+    "documents": 18,
+    "chunks": 154,
+    "questions": 122
+  },
+  "k": 10,
+  "configs": [
+    {
+      "name": "BM25",
+      "recallAt1": 0.6885,
+      "recallAt3": 0.8443,
+      "recallAt5": 0.877,
+      "recallAt10": 0.9262,
+      "mrr": 0.7751,
+      "ndcg10": 0.8106,
+      "latencyMsP50": 0.7,
+      "latencyMsP95": 1.5
+    },
+    {
+      "name": "Dense (bge-small)",
+      "recallAt1": 0.6803,
+      "recallAt3": 0.877,
+      "recallAt5": 0.918,
+      "recallAt10": 0.959,
+      "mrr": 0.7834,
+      "ndcg10": 0.8247,
+      "latencyMsP50": 14.5,
+      "latencyMsP95": 79.5
+    },
+    {
+      "name": "Hybrid (RRF)",
+      "recallAt1": 0.6885,
+      "recallAt3": 0.9016,
+      "recallAt5": 0.9098,
+      "recallAt10": 0.9754,
+      "mrr": 0.795,
+      "ndcg10": 0.8382,
+      "latencyMsP50": 11.8,
+      "latencyMsP95": 51.4
+    },
+    {
+      "name": "Hybrid + cross-encoder rerank",
+      "recallAt1": 0.7951,
+      "recallAt3": 0.9262,
+      "recallAt5": 0.9426,
+      "recallAt10": 0.9754,
+      "mrr": 0.866,
+      "ndcg10": 0.8921,
+      "latencyMsP50": 556.3,
+      "latencyMsP95": 741.2
+    }
+  ],
+  "notes": [
+    "122 questions over 18 documents (154 chunks from the production chunker); a chunk is relevant when it contains the question's gold passage.",
+    "Best overall: Hybrid + cross-encoder rerank (MRR 0.866, Recall@1 0.795, Recall@5 0.943).",
+    "Keyword/ID questions (n=42): BM25 Recall@1 0.929 vs dense 0.881.",
+    "Paraphrased questions (n=52): dense Recall@1 0.500 vs BM25 0.404.",
+    "Configs mirror app/rag/retriever.py: RRF k=60 over the top-30 dense and top-30 BM25 lists; the cross-encoder re-scores the top 20 fused chunks and the final score is 0.75·rerank + 0.25·retrieval evidence.",
+    "Latency: single query on CPU with warm models, including query embedding (and reranking)."
+  ],
+  "byType": {
+    "keyword": {
+      "BM25": {
+        "recallAt1": 0.9286,
+        "recallAt3": 1.0,
+        "recallAt5": 1.0,
+        "recallAt10": 1.0,
+        "mrr": 0.9603,
+        "ndcg10": 0.9705
+      },
+      "Dense (bge-small)": {
+        "recallAt1": 0.881,
+        "recallAt3": 0.9762,
+        "recallAt5": 0.9762,
+        "recallAt10": 1.0,
+        "mrr": 0.9276,
+        "ndcg10": 0.9454
+      },
+      "Hybrid (RRF)": {
+        "recallAt1": 0.9048,
+        "recallAt3": 1.0,
+        "recallAt5": 1.0,
+        "recallAt10": 1.0,
+        "mrr": 0.9524,
+        "ndcg10": 0.9649
+      },
+      "Hybrid + cross-encoder rerank": {
+        "recallAt1": 0.9762,
+        "recallAt3": 1.0,
+        "recallAt5": 1.0,
+        "recallAt10": 1.0,
+        "mrr": 0.9881,
+        "ndcg10": 0.9912
+      }
+    },
+    "paraphrase": {
+      "BM25": {
+        "recallAt1": 0.4038,
+        "recallAt3": 0.6346,
+        "recallAt5": 0.7115,
+        "recallAt10": 0.8269,
+        "mrr": 0.5461,
+        "ndcg10": 0.6103
+      },
+      "Dense (bge-small)": {
+        "recallAt1": 0.5,
+        "recallAt3": 0.75,
+        "recallAt5": 0.8269,
+        "recallAt10": 0.9038,
+        "mrr": 0.6353,
+        "ndcg10": 0.696
+      },
+      "Hybrid (RRF)": {
+        "recallAt1": 0.4808,
+        "recallAt3": 0.7692,
+        "recallAt5": 0.7885,
+        "recallAt10": 0.9423,
+        "mrr": 0.628,
+        "ndcg10": 0.701
+      },
+      "Hybrid + cross-encoder rerank": {
+        "recallAt1": 0.5769,
+        "recallAt3": 0.8269,
+        "recallAt5": 0.8654,
+        "recallAt10": 0.9423,
+        "mrr": 0.7177,
+        "ndcg10": 0.7707
+      }
+    },
+    "factual": {
+      "BM25": {
+        "recallAt1": 0.8571,
+        "recallAt3": 1.0,
+        "recallAt5": 1.0,
+        "recallAt10": 1.0,
+        "mrr": 0.9226,
+        "ndcg10": 0.9426
+      },
+      "Dense (bge-small)": {
+        "recallAt1": 0.7143,
+        "recallAt3": 0.9643,
+        "recallAt5": 1.0,
+        "recallAt10": 1.0,
+        "mrr": 0.8423,
+        "ndcg10": 0.8827
+      },
+      "Hybrid (RRF)": {
+        "recallAt1": 0.75,
+        "recallAt3": 1.0,
+        "recallAt5": 1.0,
+        "recallAt10": 1.0,
+        "mrr": 0.869,
+        "ndcg10": 0.9031
+      },
+      "Hybrid + cross-encoder rerank": {
+        "recallAt1": 0.9286,
+        "recallAt3": 1.0,
+        "recallAt5": 1.0,
+        "recallAt10": 1.0,
+        "mrr": 0.9583,
+        "ndcg10": 0.969
+      }
+    }
+  },
+  "questionTypes": {
+    "keyword": 42,
+    "paraphrase": 52,
+    "factual": 28
+  },
+  "settings": {
+    "embeddingModel": "BAAI/bge-small-en-v1.5",
+    "rerankerModel": "Xenova/ms-marco-MiniLM-L-6-v2",
+    "rerankerLoaded": true,
+    "rrfK": 60,
+    "denseK": 30,
+    "lexicalK": 30,
+    "rerankPool": 20,
+    "rerankWeight": 0.75
+  },
+  "hardest": [
+    {
+      "id": "q075",
+      "type": "paraphrase",
+      "rank": 30,
+      "question": "Why does such a tiny drop in the number matter so much?",
+      "doc": "science_ocean_acidification.md"
+    },
+    {
+      "id": "q105",
+      "type": "paraphrase",
+      "rank": 29,
+      "question": "My old printer can't get online wirelessly, what should I change?",
+      "doc": "product_orbit_ax3000_manual.md"
+    },
+    {
+      "id": "q067",
+      "type": "paraphrase",
+      "rank": 13,
+      "question": "Can these shots alter a person's genes?",
+      "doc": "science_mrna_vaccines.md"
+    },
+    {
+      "id": "q021",
+      "type": "paraphrase",
+      "rank": 8,
+      "question": "Why did each warehouse robot become cheaper to build in the second quarter?",
+      "doc": "finance_northwind_q2_fy2025.md"
+    },
+    {
+      "id": "q030",
+      "type": "paraphrase",
+      "rank": 8,
+      "question": "How did the company start getting paid faster by its clients?",
+      "doc": "finance_northwind_q3_fy2025.md"
+    },
+    {
+      "id": "q023",
+      "type": "paraphrase",
+      "rank": 7,
+      "question": "Why was the company holding more goods in its warehouses at the end of June?",
+      "doc": "finance_northwind_q2_fy2025.md"
+    },
+    {
+      "id": "q118",
+      "type": "paraphrase",
+      "rank": 6,
+      "question": "Which way of preparing the beans needs almost no water, and where is it used?",
+      "doc": "agri_coffee_processing.md"
+    },
+    {
+      "id": "q093",
+      "type": "paraphrase",
+      "rank": 5,
+      "question": "How do I make sure incoming event notifications really come from the storage service?",
+      "doc": "product_nimbus_api_v2.md"
+    },
+    {
+      "id": "q114",
+      "type": "paraphrase",
+      "rank": 4,
+      "question": "Who has to sign off on a big reimbursement request?",
+      "doc": "policy_halcyon_remote_work.md"
+    }
+  ],
+  "seconds": 83.2
+}

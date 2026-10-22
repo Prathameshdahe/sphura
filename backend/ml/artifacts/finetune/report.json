@@ -1,0 +1,58 @@
+{
+  "available": true,
+  "name": "sphura-fin-1.7b",
+  "base": "Qwen/Qwen3-1.7B",
+  "method": "QLoRA SFT (nf4 base, LoRA r=16, alpha=32, bf16 compute, paged AdamW 8-bit, lr 0.0002, bs 1 × GA 16, seq 1024)",
+  "rows": 3134,
+  "steps": 196,
+  "epochs": 1.0,
+  "trainMinutes": 58.9,
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "lora": {
+    "r": 16,
+    "alpha": 32,
+    "targets": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ]
+  },
+  "eval": {
+    "heldoutPerplexityBase": 63.349,
+    "heldoutPerplexityTuned": 6.189,
+    "finqaEmBase": 0.32,
+    "finqaEmTuned": 0.22,
+    "refusalRate": 0.74,
+    "falseRefusalRate": 0.18,
+    "judgeWinRate": 0.37,
+    "judgeModel": "qwen3.5:4b (local Ollama judge — weaker than a cloud judge)",
+    "mmluMiniBase": null,
+    "mmluMiniTuned": null
+  },
+  "ollamaTag": "sphura-fin-1.7b",
+  "notes": [
+    "Held-out perplexity over assistant tokens of 50 held-out rows (all slices); lower is better.",
+    "FinQA EM on 50 held-out FinQA test rows (last number in the reply vs gold, 1 % tolerance, percent/fraction forms accepted; up to 160 new tokens).",
+    "Refusal rate on 50 off-topic prompts and false-refusal rate on 50 finance prompts, regex detector; base model: refusal 0.0, false refusal 0.0.",
+    "Judge: qwen3.5:4b (local Ollama judge — weaker than a cloud judge); 50 held-out QA rows, each judged in both orders (a pick that flips with the order counts as a tie) — tuned wins 0, losses 13, ties 37, judge errors 0 (excluded); win rate counts ties as 0.5.",
+    "MMLU-mini skipped (--skip-mmlu)",
+    "Greedy decoding, same system prompt for both models (cuda); generation time 11 min.",
+    "Final training eval loss 1.4715267419815063; peak VRAM 2.65 GB.",
+    "Ollama smoke test: 10/10 prompts answered via llama.cpp convert_hf_to_gguf --outtype q8_0 → ollama create (q8_0)"
+  ],
+  "baseEval": {
+    "refusalRate": 0.0,
+    "falseRefusalRate": 0.0
+  },
+  "judgeCounts": {
+    "wins": 0,
+    "losses": 13,
+    "ties": 37,
+    "errors": 0
+  },
+  "evaluatedAt": "2026-10-22T18:34:26Z"
+}

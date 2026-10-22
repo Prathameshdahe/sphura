@@ -1,0 +1,63 @@
+# One command: `docker compose up --build`  →  open http://localhost:3000
+# Keys and options come from ./.env (copy .env.example). Postgres and Qdrant are NOT published to the host.
+
+name: sphura
+
+services:
+  postgres:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: sphura
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-sphura-local-only}
+      POSTGRES_DB: sphura
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U sphura -d sphura"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  qdrant:
+    image: qdrant/qdrant:v1.19.0
+    restart: unless-stopped
+    volumes:
+      - qdrant:/qdrant/storage
+
+  backend:
+    build: ./backend
+    restart: unless-stopped
+    env_file:
+      - path: ./.env
+        required: false
+    environment:
+      DATABASE_URL: postgresql+psycopg://sphura:${POSTGRES_PASSWORD:-sphura-local-only}@postgres:5432/sphura
+      QDRANT_URL: http://qdrant:6333
+      # reach Ollama / LM Studio running on the host machine
+      OLLAMA_BASE_URL: ${DOCKER_OLLAMA_BASE_URL:-http://host.docker.internal:11434/v1}
+      LMSTUDIO_BASE_URL: ${DOCKER_LMSTUDIO_BASE_URL:-http://host.docker.internal:1234/v1}
+      CORS_ORIGINS: http://localhost:3000
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - backend-data:/app/data
+    depends_on:
+      postgres:
+        condition: service_healthy
+      qdrant:
+        condition: service_started
+
+  frontend:
+    build: ./frontend
+    restart: unless-stopped
+    ports:
+      - "3000:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+
+volumes:
+  pgdata:
+  qdrant:
+  backend-data:

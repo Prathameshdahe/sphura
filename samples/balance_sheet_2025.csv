@@ -1,0 +1,20 @@
+Category,Sub-Category,Account Name,Amount (USD),Notes
+Current Assets,Cash,Operating Account,850000,
+Current Assets,Cash,Payroll Account,400000,
+Current Assets,Receivables,Accounts Receivable (1-30 Days),300000,
+Current Assets,Receivables,Accounts Receivable (31-90 Days),120000,High risk
+Current Assets,Receivables,Allowance for Doubtful Accounts,-30000,
+Current Assets,Inventory,Finished Goods,200000,
+Current Assets,Inventory,Raw Materials,120000,
+Non-Current Assets,PPE,Land & Buildings,1500000,
+Non-Current Assets,PPE,Computer Hardware & Servers,800000,Depreciated 30%
+Non-Current Assets,PPE,Accumulated Depreciation,-450000,
+Non-Current Assets,Intangibles,Capitalized Software Dev,600000,
+Non-Current Assets,Intangibles,Goodwill,200000,
+Current Liabilities,Payables,Accounts Payable,380000,
+Current Liabilities,Short-Term Debt,Revolving Credit Line,150000,Due Q3 2025
+Current Liabilities,Accrued Expenses,Accrued Payroll & Bonuses,120000,
+Non-Current Liabilities,Long-Term Debt,Equip. Financing Notes,1800000,5-year term
+Equity,Capital,Common Stock (Par Value),390000,
+Equity,Capital,Additional Paid-In Capital,800000,Series A
+Equity,Retained Earnings,Retained Earnings,970000,

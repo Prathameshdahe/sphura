@@ -1,0 +1,12 @@
+{
+  "backend": "sklearn",
+  "onnxAccuracy": 0.9535,
+  "sklearnAccuracy": 0.986,
+  "reason": "held-out test accuracy: DistilBERT ONNX 0.9535 vs sklearn 0.9860, so sklearn answers first; on 222 rows with unseen merchants DistilBERT scores 0.698 vs sklearn 0.536, so rows where sklearn is below 0.5 confidence go to DistilBERT (kept only at >= 0.9): 0.981 in-domain, 0.649 unseen",
+  "cascade": {
+    "first": "sklearn",
+    "fallback": "onnx",
+    "threshold": 0.5,
+    "fallbackMin": 0.9
+  }
+}

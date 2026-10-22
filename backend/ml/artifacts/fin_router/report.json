@@ -1,0 +1,193 @@
+{
+  "key": "router",
+  "name": "Finance intent router",
+  "task": "6-way intent classification (spending / documents / market / explain / advice / out_of_scope)",
+  "model": "Logistic regression on bge-small embeddings",
+  "trainedAt": "2026-10-22T13:45:06Z",
+  "dataset": {
+    "name": "fin_router.jsonl (templated + hand-written, project-authored)",
+    "train": 1698,
+    "test": 425,
+    "license": "Project-authored (same licence as the repository)",
+    "note": "2123 examples: 243 hand-written boundary cases + templated messages; test = stratified 20 % hold-out; see ml/data/README.md"
+  },
+  "metrics": {
+    "accuracy": 0.9576,
+    "macroF1": 0.9596
+  },
+  "baseline": {
+    "name": "Keyword rules (app.agent.classify)",
+    "accuracy": 0.5671,
+    "macroF1": 0.5656
+  },
+  "labels": [
+    "spending",
+    "documents",
+    "market",
+    "explain",
+    "advice",
+    "out_of_scope"
+  ],
+  "perClass": [
+    {
+      "label": "spending",
+      "precision": 0.9545,
+      "recall": 0.9403,
+      "f1": 0.9474,
+      "support": 67
+    },
+    {
+      "label": "documents",
+      "precision": 0.9701,
+      "recall": 0.9848,
+      "f1": 0.9774,
+      "support": 66
+    },
+    {
+      "label": "market",
+      "precision": 1.0,
+      "recall": 0.9545,
+      "f1": 0.9767,
+      "support": 66
+    },
+    {
+      "label": "explain",
+      "precision": 0.9221,
+      "recall": 0.9467,
+      "f1": 0.9342,
+      "support": 75
+    },
+    {
+      "label": "advice",
+      "precision": 0.9851,
+      "recall": 1.0,
+      "f1": 0.9925,
+      "support": 66
+    },
+    {
+      "label": "out_of_scope",
+      "precision": 0.9294,
+      "recall": 0.9294,
+      "f1": 0.9294,
+      "support": 85
+    }
+  ],
+  "confusion": [
+    [
+      63,
+      1,
+      0,
+      0,
+      0,
+      3
+    ],
+    [
+      0,
+      65,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      63,
+      1,
+      0,
+      2
+    ],
+    [
+      1,
+      1,
+      0,
+      71,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      66,
+      0
+    ],
+    [
+      2,
+      0,
+      0,
+      4,
+      0,
+      79
+    ]
+  ],
+  "extras": {
+    "unseenTemplatesAccuracy": 0.9213,
+    "unseenTemplatesMacroF1": 0.9207,
+    "hardSubsetAccuracy": 0.8644,
+    "hardSubsetSize": 59.0,
+    "tfidfLrAccuracy": 0.9788,
+    "tfidfLrMacroF1": 0.9795,
+    "bestC": 32.0,
+    "routerThreshold": 0.6,
+    "coverageAtThreshold": 0.9647,
+    "latencyMsP50": 5.8921,
+    "latencyMsP95": 7.1871,
+    "trainingSeconds": 22.0249
+  },
+  "ablation": [
+    {
+      "name": "Keyword rules (app.agent.classify)",
+      "accuracy": 0.5671,
+      "macroF1": 0.5656,
+      "unseenTemplatesAccuracy": 0.5502,
+      "unseenTemplatesMacroF1": 0.5405
+    },
+    {
+      "name": "TF-IDF (1-2 grams) + logistic regression",
+      "accuracy": 0.9788,
+      "macroF1": 0.9795,
+      "unseenTemplatesAccuracy": 0.8563,
+      "unseenTemplatesMacroF1": 0.8572
+    },
+    {
+      "name": "Logistic regression on bge-small embeddings",
+      "accuracy": 0.9576,
+      "macroF1": 0.9596,
+      "unseenTemplatesAccuracy": 0.9213,
+      "unseenTemplatesMacroF1": 0.9207
+    }
+  ],
+  "hyperparameters": {
+    "C": 32.0,
+    "grid": [
+      0.25,
+      0.5,
+      1.0,
+      2.0,
+      4.0,
+      8.0,
+      16.0,
+      32.0
+    ],
+    "cvFolds": 5,
+    "cvMacroF1ByC": {
+      "0.25": 0.9109,
+      "0.5": 0.9228,
+      "1.0": 0.9353,
+      "2.0": 0.9494,
+      "4.0": 0.9561,
+      "8.0": 0.9621,
+      "16.0": 0.9643,
+      "32.0": 0.9661
+    },
+    "classWeight": "balanced",
+    "embedding": "BAAI/bge-small-en-v1.5"
+  },
+  "unseenTemplates": {
+    "folds": 5,
+    "accuracy": 0.9213,
+    "macroF1": 0.9207
+  }
+}

@@ -1,0 +1,2322 @@
+[
+  {
+    "persona": "asha",
+    "question": "where did my money go last month?",
+    "notes": [
+      "ok"
+    ],
+    "conversationId": "3e80658c-5758-4ebb-a8f1-c1031575aba3",
+    "text": "**September\u202f2026 cash\u2011flow**\n\n| Item | Amount (\u20b9) |\n|------|------------|\n| Money\u202fin (salary\u202f+\u202fother credits) | 1,10,218 |\n| Money\u202fout (all expenses) | 53,631 |\n| Net\u202fsavings | **56,587** |\n\n*All figures are taken from the computed analysis of your bank\u2011statement CSV covering 1\u202fApr\u202f\u2013\u202f30\u202fSep\u202f2026*\u30101\u3011.\n\n### Where the outflow went\nThe September\u2011specific category breakdown is not isolated in the current extract, but the overall spending pattern for the six\u2011month period is:\n\n| Category | Total amount (\u20b9) | Share of total outflow |\n|----------|------------------|------------------------|\n| Rent | 1,32,000 | 31\u202f% |\n| Shopping | 69,708 | 16\u202f% |\n| Investments | 60,000 | 14\u202f% |\n| Travel | 42,821 | 10\u202f% |\n| Groceries | 33,921 | 8\u202f% |\n| Utilities | 21,904 | 5\u202f% |\n| Cash withdrawal | 19,000 | 4\u202f% |\n| Subscriptions | 16,308 | 4\u202f% |\n| Dining | 15,745 | 4\u202f% |\n| Fuel | 12,475 | 3\u202f% |\n| Fees & charges | 625.40 |\u202f<\u202f1\u202f% |\n\n*These totals are for the whole Apr\u2011Sep period; they give a reliable picture of where most of your money typically goes*\u30101\u3011.\n\n### Quick take\u2011aways & actions\n1. **Positive September balance** \u2013 You saved **\u20b956.6\u202fk** after expenses, well above your six\u2011month average burn rate of **\u20b970,751** per month. Replicating the spending pattern that produced this surplus (e.g., keeping discretionary spend low) will raise your overall savings rate beyond the current\u202f\u2248\u202f25\u202f%.\n2. **Rent dominates outflows** \u2013 At 31\u202f% of total spending, rent is the single largest expense. If feasible, negotiate a lower rent, consider a roommate, or explore a slightly cheaper location to free up cash for other goals.\n3. **Control large discretionary spikes** \u2013 The biggest single payment in the period was a **\u20b942,999** shopping transaction (August). Setting a monthly cap for shopping or using a prepaid card can prevent similar spikes from eroding future surpluses.  \n\nIf you need a detailed September\u2011by\u2011category breakdown, upload the raw CSV or request a fresh extraction; the tool can generate the precise split.\n\n```chart\n{\"type\":\"pie\",\"title\":\"Spending by category\",\"unit\":\"\u20b9\",\"labels\":[\"Rent\",\"Shopping\",\"Investments\",\"Travel\",\"Groceries\",\"Utilities\",\"Other\"],\"series\":[{\"name\":\"Spent\",\"data\":[132000.0,69708.31,60000.0,42821.29,33920.54,21903.53,64152.66]}]}\n```\n\n```chart\n{\"type\":\"bar\",\"title\":\"Money in and out by month\",\"unit\":\"\u20b9\",\"labels\":[\"Apr 2026\",\"May 2026\",\"Jun 2026\",\"Jul 2026\",\"Aug 2026\",\"Sep 2026\"],\"series\":[{\"name\":\"In\",\"data\":[86196.85,87857.55,86993.41,93383.86,100508.28,110217.86]},{\"name\":\"Out\",\"data\":[60101.71,56537.92,58876.63,62308.09,133051.11,53630.87]}]}\n```",
+    "firstTokenS": 31.35,
+    "latencyTotalS": 34.53,
+    "statuses": [
+      "thinking:Understanding your question",
+      "analyzing:Crunching your statements",
+      "composing:Writing the answer",
+      "thinking:Thinking it through",
+      "composing:Writing the answer",
+      "thinking:Asking 3 models",
+      "composing:Merging the answers",
+      "analyzing:Checking claims against sources"
+    ],
+    "steps": [
+      {
+        "id": "db404659-b604-4c07-ba10-c24b596b4c70",
+        "tool": "router",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "ae8cd2ea-dc46-446b-999c-edc1f9cc8e71",
+        "tool": "finance_analyze",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "b8b3a0d5-eb9d-47f1-a3df-174fffe72764",
+        "tool": "memory_recall",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "de74f45f-250f-473a-a7cc-8d5968206a74",
+        "tool": "ensemble",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "57695553-65e1-406b-a208-f206f5583e9f",
+        "tool": "ensemble_member",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "1d806959-2352-4f4f-90e0-6c4c30e88754",
+        "tool": "ensemble_member",
+        "status": "error",
+        "title": null
+      },
+      {
+        "id": "53fec810-f177-4649-984d-5e50027bfcdd",
+        "tool": "ensemble_member",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "712a1f56-a4c6-43e3-a72d-8004ca64a384",
+        "tool": "ensemble_merge",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "c767c74d-a8a3-42b2-9e4f-5a55be7ea73c",
+        "tool": "verify",
+        "status": "done",
+        "title": null
+      }
+    ],
+    "sourceCount": 1,
+    "verification": {
+      "verification": {
+        "score": 0.833,
+        "label": "mostly grounded",
+        "supported": 5,
+        "partial": 0,
+        "unsupported": 1,
+        "uncited": 4,
+        "model": "nli-deberta-v3-xsmall (ONNX)",
+        "sentences": [
+          {
+            "text": "*All figures are taken from the computed analysis of your bank\u2011statement CSV covering 1\u202fApr\u202f\u2013\u202f30\u202fSep\u202f2026*[1].",
+            "start": 191,
+            "end": 301,
+            "sourceIndexes": [
+              1
+            ],
+            "verdict": "supported",
+            "score": 0.9
+          },
+          {
+            "text": "The September\u2011specific category breakdown is not isolated in the current extract, but the overall spending pattern for the six\u2011month period is:",
+            "start": 330,
+            "end": 473,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          },
+          {
+            "text": "*These totals are for the whole Apr\u2011Sep period; they give a reliable picture of where most of your money typically goes*[1].",
+            "start": 917,
+            "end": 1041,
+            "sourceIndexes": [
+              1
+            ],
+            "verdict": "unsupported",
+            "score": 0.011
+          },
+          {
+            "text": "**Positive September balance** \u2013 You saved **\u20b956.6\u202fk** after expenses, well above your six\u2011month average burn rate of **\u20b970,751** per month.",
+            "start": 1077,
+            "end": 1217,
+            "sourceIndexes": [],
+            "verdict": "supported",
+            "score": 0.9
+          },
+          {
+            "text": "Replicating the spending pattern that produced this surplus (e.g., keeping discretionary spend low) will raise your overall savings rate beyond the current\u202f\u2248\u202f25\u202f%.",
+            "start": 1218,
+            "end": 1381,
+            "sourceIndexes": [],
+            "verdict": "supported",
+            "score": 0.9
+          },
+          {
+            "text": "**Rent dominates outflows** \u2013 At 31\u202f% of total spending, rent is the single largest expense.",
+            "start": 1385,
+            "end": 1477,
+            "sourceIndexes": [],
+            "verdict": "supported",
+            "score": 0.9
+          },
+          {
+            "text": "If feasible, negotiate a lower rent, consider a roommate, or explore a slightly cheaper location to free up cash for other goals.",
+            "start": 1478,
+            "end": 1607,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          },
+          {
+            "text": "**Control large discretionary spikes** \u2013 The biggest single payment in the period was a **\u20b942,999** shopping transaction (August).",
+            "start": 1611,
+            "end": 1741,
+            "sourceIndexes": [],
+            "verdict": "supported",
+            "score": 0.9
+          },
+          {
+            "text": "Setting a monthly cap for shopping or using a prepaid card can prevent similar spikes from eroding future surpluses.",
+            "start": 1742,
+            "end": 1858,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          },
+          {
+            "text": "If you need a detailed September\u2011by\u2011category breakdown, upload the raw CSV or request a fresh extraction; the tool can generate the precise split.",
+            "start": 1862,
+            "end": 2008,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    "error": null,
+    "model": "ensemble:sphura"
+  },
+  {
+    "persona": "asha",
+    "question": "any subscriptions I forgot?",
+    "notes": [
+      "ok"
+    ],
+    "conversationId": "3e80658c-5758-4ebb-a8f1-c1031575aba3",
+    "text": "\n\n```chart\n{\"type\":\"pie\",\"title\":\"Spending by category\",\"unit\":\"\u20b9\",\"labels\":[\"Rent\",\"Shopping\",\"Investments\",\"Travel\",\"Groceries\",\"Utilities\",\"Other\"],\"series\":[{\"name\":\"Spent\",\"data\":[132000.0,69708.31,60000.0,42821.29,33920.54,21903.53,64152.66]}]}\n```\n\n```chart\n{\"type\":\"bar\",\"title\":\"Money in and out by month\",\"unit\":\"\u20b9\",\"labels\":[\"Apr 2026\",\"May 2026\",\"Jun 2026\",\"Jul 2026\",\"Aug 2026\",\"Sep 2026\"],\"series\":[{\"name\":\"In\",\"data\":[86196.85,87857.55,86993.41,93383.86,100508.28,110217.86]},{\"name\":\"Out\",\"data\":[60101.71,56537.92,58876.63,62308.09,133051.11,53630.87]}]}\n```",
+    "firstTokenS": 13.01,
+    "latencyTotalS": 13.96,
+    "statuses": [
+      "thinking:Understanding your question",
+      "analyzing:Crunching your statements",
+      "composing:Writing the answer",
+      "thinking:Thinking it through",
+      "composing:Writing the answer",
+      "reading:Reading your documents",
+      "composing:Writing the answer",
+      "thinking:Retrying with GPT-OSS 120B",
+      "thinking:Retrying with Nemotron 3.5 Super VL",
+      "thinking:Retrying with Nemotron 3.5 Lightning",
+      "composing:Writing the answer",
+      "analyzing:Checking claims against sources"
+    ],
+    "steps": [
+      {
+        "id": "160caed7-5d42-4647-b418-5079c727702f",
+        "tool": "router",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "a7ba8317-1205-4d4c-877c-2659e226a636",
+        "tool": "finance_analyze",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "b6bf5030-62d8-4ce4-a4f5-4a80c62ed506",
+        "tool": "memory_recall",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "6989d309-9858-4416-a459-35b90f77c178",
+        "tool": "search_documents",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "d3da61ad-3bbc-4a8b-ae5f-707b32015447",
+        "tool": "switch_model",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "da341730-1d19-4366-9294-d44d705ab3cd",
+        "tool": "switch_model",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "61015ed5-2d14-4379-a307-38eafc573c15",
+        "tool": "switch_model",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "50b50941-0758-429c-998d-5b9e99514b0a",
+        "tool": "verify",
+        "status": "done",
+        "title": null
+      }
+    ],
+    "sourceCount": 7,
+    "verification": {
+      "verification": {
+        "score": 0.643,
+        "label": "partially grounded",
+        "supported": 4,
+        "partial": 1,
+        "unsupported": 2,
+        "uncited": 5,
+        "model": "nli-deberta-v3-xsmall (ONNX)",
+        "sentences": [
+          {
+            "text": "**Forgotten subscriptions you already pay for**",
+            "start": 0,
+            "end": 47,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          },
+          {
+            "text": "**Total recurring\u2011subscription outflow (Apr\u202f\u2013\u202fSep\u202f2026)**: **\u20b916,308** (\u2248\u202f\u20b92,718\u202f/\u202fmonth across 18 individual charges).",
+            "start": 962,
+            "end": 1081,
+            "sourceIndexes": [],
+            "verdict": "supported",
+            "score": 0.9
+          },
+          {
+            "text": "**Audit the two biggest recurring charges** \u2013 ChatGPT\u202fPlus (\u20b91,950) and Netflix (\u20b9649).",
+            "start": 1106,
+            "end": 1193,
+            "sourceIndexes": [],
+            "verdict": "supported",
+            "score": 0.9
+          },
+          {
+            "text": "If you rarely use ChatGPT or can switch to the free tier, you could save ~\u20b92,600\u202f/\u202fyear.",
+            "start": 1194,
+            "end": 1282,
+            "sourceIndexes": [],
+            "verdict": "unsupported",
+            "score": 0.071
+          },
+          {
+            "text": "**Bundle or downgrade** \u2013 Airtel postpaid (\u20b9799) and ACT Fibernet (\u20b91,059) together cost ~\u20b91,858\u202f/\u202fmonth.",
+            "start": 1288,
+            "end": 1393,
+            "sourceIndexes": [],
+            "verdict": "partial",
+            "score": 0.5
+          },
+          {
+            "text": "Check whether a combined \u201cbroadband\u2011plus\u2011postpaid\u201d plan from a single provider is cheaper, or negotiate a longer\u2011term discount.",
+            "start": 1394,
+            "end": 1521,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          },
+          {
+            "text": "**Set a subscription\u2011review calendar** \u2013 Mark 1\u202fApril each year (or the first month of your financial year) to list every auto\u2011debit.",
+            "start": 1527,
+            "end": 1660,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          },
+          {
+            "text": "The CSV already shows 18 subscription\u2011type charges; a quick spreadsheet filter for \u201cSUBSCR\u201d or \u201cSUB\u201d will surface any new ones.",
+            "start": 1661,
+            "end": 1788,
+            "sourceIndexes": [],
+            "verdict": "supported",
+            "score": 0.9
+          },
+          {
+            "text": "**Cancel unused trials** \u2013 If you signed up for any free\u2011trial that converted to a paid plan after the first month, those will appear as a single \u20b91,950\u2011plus charge.",
+            "start": 1794,
+            "end": 1959,
+            "sourceIndexes": [],
+            "verdict": "supported",
+            "score": 0.9
+          },
+          {
+            "text": "A one\u2011time check of your email \u201creceipts\u201d folder can reveal them.",
+            "start": 1960,
+            "end": 2025,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          },
+          {
+            "text": "**Bottom line:** Your subscription spend is modest (\u2248\u202f\u20b92.7\u202fk\u202f/\u202fmonth), but the ChatGPT\u202fPlus and Netflix lines are the easiest to trim if you want to free up cash for savings or investments.",
+            "start": 2029,
+            "end": 2218,
+            "sourceIndexes": [],
+            "verdict": "unsupported",
+            "score": 0.069
+          },
+          {
+            "text": "No other hidden recurring payments appear in the six\u2011month statement extract.",
+            "start": 2219,
+            "end": 2296,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    "error": null,
+    "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b"
+  },
+  {
+    "persona": "asha",
+    "question": "how much can I save if I cut dining by half?",
+    "notes": [
+      "ok"
+    ],
+    "conversationId": "3e80658c-5758-4ebb-a8f1-c1031575aba3",
+    "text": "\n\n```chart\n{\"type\":\"pie\",\"title\":\"Spending by category\",\"unit\":\"\u20b9\",\"labels\":[\"Rent\",\"Shopping\",\"Investments\",\"Travel\",\"Groceries\",\"Utilities\",\"Other\"],\"series\":[{\"name\":\"Spent\",\"data\":[132000.0,69708.31,60000.0,42821.29,33920.54,21903.53,64152.66]}]}\n```\n\n```chart\n{\"type\":\"bar\",\"title\":\"Money in and out by month\",\"unit\":\"\u20b9\",\"labels\":[\"Apr 2026\",\"May 2026\",\"Jun 2026\",\"Jul 2026\",\"Aug 2026\",\"Sep 2026\"],\"series\":[{\"name\":\"In\",\"data\":[86196.85,87857.55,86993.41,93383.86,100508.28,110217.86]},{\"name\":\"Out\",\"data\":[60101.71,56537.92,58876.63,62308.09,133051.11,53630.87]}]}\n```",
+    "firstTokenS": 6.55,
+    "latencyTotalS": 7.56,
+    "statuses": [
+      "thinking:Understanding your question",
+      "analyzing:Crunching your statements",
+      "composing:Writing the answer",
+      "thinking:Retrying with GPT-OSS 120B",
+      "thinking:Retrying with Nemotron 3.5 Super VL",
+      "composing:Writing the answer",
+      "analyzing:Checking claims against sources"
+    ],
+    "steps": [
+      {
+        "id": "53402d3b-9d97-45dd-a468-cb8eaf66a70a",
+        "tool": "router",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "12e2fedd-2801-4d00-ae42-bc311d2df22f",
+        "tool": "finance_analyze",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "7b46891e-f2b1-4248-a8ce-66c95c7ea6d9",
+        "tool": "memory_recall",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "daaa0fa6-b4c6-4963-8bfb-808232c9ff47",
+        "tool": "switch_model",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "7eca04f3-e6df-4e08-ba4a-62820a1d1568",
+        "tool": "switch_model",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "6d934e29-a56c-4d8b-bf2d-4acf8631a557",
+        "tool": "verify",
+        "status": "done",
+        "title": null
+      }
+    ],
+    "sourceCount": 1,
+    "verification": {
+      "verification": {
+        "score": 0.5,
+        "label": "partially grounded",
+        "supported": 3,
+        "partial": 3,
+        "unsupported": 3,
+        "uncited": 4,
+        "model": "nli-deberta-v3-xsmall (ONNX)",
+        "sentences": [
+          {
+            "text": "Cutting dining spend by half would save you **\u20b97,873 over six months**, or about **\u20b91,312 per month**.",
+            "start": 0,
+            "end": 102,
+            "sourceIndexes": [],
+            "verdict": "unsupported",
+            "score": 0.017
+          },
+          {
+            "text": "Total dining spend (1 Apr \u2013 30 Sep 2026): **\u20b915,745** across 26 transactions [1]",
+            "start": 122,
+            "end": 202,
+            "sourceIndexes": [
+              1
+            ],
+            "verdict": "supported",
+            "score": 0.9
+          },
+          {
+            "text": "Half of that: \u20b915,745 \u00f7 2 = **\u20b97,872.50** saved over the period [1]",
+            "start": 205,
+            "end": 272,
+            "sourceIndexes": [
+              1
+            ],
+            "verdict": "partial",
+            "score": 0.5
+          },
+          {
+            "text": "Monthly average saving: \u20b97,872.50 \u00f7 6 \u2248 **\u20b91,312** per month [1]",
+            "start": 275,
+            "end": 339,
+            "sourceIndexes": [
+              1
+            ],
+            "verdict": "unsupported",
+            "score": 0.057
+          },
+          {
+            "text": "**What this means for your budget**",
+            "start": 341,
+            "end": 376,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          },
+          {
+            "text": "Your current six\u2011month net savings are **\u20b91,40,651** (a 25% savings rate) [1].",
+            "start": 377,
+            "end": 455,
+            "sourceIndexes": [
+              1
+            ],
+            "verdict": "supported",
+            "score": 0.9
+          },
+          {
+            "text": "Adding \u20b97,873 would lift net savings to roughly **\u20b91,48,524**, pushing your savings rate from 25% to about **26%** [1].",
+            "start": 456,
+            "end": 575,
+            "sourceIndexes": [
+              1
+            ],
+            "verdict": "partial",
+            "score": 0.5
+          },
+          {
+            "text": "**Practical ways to halve dining spend**",
+            "start": 577,
+            "end": 617,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          },
+          {
+            "text": "**Set a monthly dining cap** \u2013 Your average dining spend is \u20b92,624 per month (\u20b915,745 \u00f7 6).",
+            "start": 621,
+            "end": 712,
+            "sourceIndexes": [],
+            "verdict": "partial",
+            "score": 0.5
+          },
+          {
+            "text": "Capping it at \u20b91,300\u2013\u20b91,400 would achieve the target [1].",
+            "start": 713,
+            "end": 770,
+            "sourceIndexes": [
+              1
+            ],
+            "verdict": "unsupported",
+            "score": 0.088
+          },
+          {
+            "text": "**Prep more meals at home** \u2013 With groceries already at \u20b933,921 over six months, shifting even a few restaurant meals to home\u2011cooked food can cut dining costs without reducing food quality [1].",
+            "start": 774,
+            "end": 967,
+            "sourceIndexes": [
+              1
+            ],
+            "verdict": "supported",
+            "score": 0.9
+          },
+          {
+            "text": "**Use credit\u2011card or UPI offers** \u2013 If you must eat out, look for cashback or discount offers on food delivery and restaurant spends to effectively reduce the net cost.",
+            "start": 971,
+            "end": 1139,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          },
+          {
+            "text": "This is general budgeting information, not personalised financial advice.",
+            "start": 1141,
+            "end": 1214,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    "error": null,
+    "model": "nvidia:nvidia/nemotron-3.5-super-vl-120b-a12b"
+  },
+  {
+    "persona": "rahul",
+    "question": "I earn 12 LPA, which tax regime is better?",
+    "notes": [
+      "ok"
+    ],
+    "conversationId": "c5b28818-2f31-4f02-9f94-cd47e11c8489",
+    "text": "**Answer:**  \nFor a gross salary of **\u20b912\u202flakhs** (FY\u202f2026\u201127, AY\u202f2027\u201128) the **new tax regime** gives a lower tax liability, saving you **\u2248\u202f\u20b91,63,800** compared with the old regime when only the standard deduction is claimed\u30101\u3011.\n\n### Quick comparison (assumes\u202f<\u202f60\u202fyears, no other exemptions)\n\n| Regime | Tax payable (\u20b9) | Net after\u2011tax income (\u20b9) |\n|--------|----------------|--------------------------|\n| Old (standard deduction\u202f\u20b950,000 only) | 1,36,200 | 10,63,800 |\n| New (no exemptions, lower slabs) | 1,72,400 | 10,27,600 |\n| **Saving with New** | **\u2011\u20b91,63,800** | \u2014 |\n\n*The calculator in source\u202f[1] evaluated both regimes for the same gross income and the above figures are the tool\u2019s output.*\n\n### Why the new regime wins here\n- **Slab rates** under the new regime are lower up to the \u20b912\u202fL limit (5\u202f% up to \u20b93\u202fL, 10\u202f% up to \u20b96\u202fL, 15\u202f% up to \u20b99\u202fL, 20\u202f% up to \u20b912\u202fL).  \n- The old regime\u2019s lower rates apply only after the \u20b95\u202fL\u2011\u20b910\u202fL slab (20\u202f%) and you receive only the \u20b950,000 standard deduction unless you claim other deductions (80C, HRA, home\u2011loan interest, etc.).\n\n### When the old regime could be preferable\nIf you can claim **\u2265\u202f\u20b91.64\u202fL** of eligible deductions (e.g., 80C investments, HRA, home\u2011loan interest, 80D health\u2011insurance premium), the tax under the old regime may become comparable or lower. In that case you would need to re\u2011run the `income_tax_estimate` tool with those deductions entered.\n\n### What to do next\n1. List all deductions you are eligible for.  \n2. Use the same `income_tax_estimate` calculator with those amounts to compare both regimes again.  \n\n*This is educational information, not personalized tax advice. Verify the final liability with a qualified tax professional or the Income Tax Department before filing.*",
+    "firstTokenS": 11.37,
+    "latencyTotalS": 13.79,
+    "statuses": [
+      "thinking:Understanding your question",
+      "composing:Writing the answer",
+      "thinking:Thinking it through",
+      "composing:Writing the answer",
+      "thinking:Asking 3 models",
+      "composing:Merging the answers",
+      "analyzing:Checking claims against sources"
+    ],
+    "steps": [
+      {
+        "id": "025d2ae1-e0b4-40f1-8f55-ca29982bbe91",
+        "tool": "router",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "a2f536f4-3e7f-49e1-a723-55ef7ac58992",
+        "tool": "memory_recall",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "835c9aa0-601b-46d8-9eb4-3f3396de8cd5",
+        "tool": "income_tax_estimate",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "603ab8b7-a20d-49b0-b701-6152afba7b6c",
+        "tool": "ensemble",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "0b086818-88c5-4ec1-96d7-1aff6fa2ee6f",
+        "tool": "ensemble_member",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "0782e415-b190-4460-bdba-1396ad3a4270",
+        "tool": "ensemble_member",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "f3260487-5a44-4aad-a3bf-4aff38d31b31",
+        "tool": "ensemble_member",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "f1563d3c-4a73-4536-8964-0090afeb19a3",
+        "tool": "ensemble_merge",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "076bbe55-045c-460c-8604-818a7fb19412",
+        "tool": "verify",
+        "status": "done",
+        "title": null
+      }
+    ],
+    "sourceCount": 1,
+    "verification": {
+      "verification": {
+        "score": 0.2,
+        "label": "ungrounded",
+        "supported": 1,
+        "partial": 0,
+        "unsupported": 4,
+        "uncited": 5,
+        "model": "nli-deberta-v3-xsmall (ONNX)",
+        "sentences": [
+          {
+            "text": "For a gross salary of **\u20b912\u202flakhs** (FY\u202f2026\u201127, AY\u202f2027\u201128) the **new tax regime** gives a lower tax liability, saving you **\u2248\u202f\u20b91,63,800** compared with the old regime when only the standard deduction is claimed[1].",
+            "start": 14,
+            "end": 230,
+            "sourceIndexes": [
+              1
+            ],
+            "verdict": "supported",
+            "score": 0.9
+          },
+          {
+            "text": "*The calculator in source\u202f[1] evaluated both regimes for the same gross income and the above figures are the tool\u2019s output.*",
+            "start": 578,
+            "end": 702,
+            "sourceIndexes": [
+              1
+            ],
+            "verdict": "unsupported",
+            "score": 0.072
+          },
+          {
+            "text": "**Slab rates** under the new regime are lower up to the \u20b912\u202fL limit (5\u202f% up to \u20b93\u202fL, 10\u202f% up to \u20b96\u202fL, 15\u202f% up to \u20b99\u202fL, 20\u202f% up to \u20b912\u202fL).",
+            "start": 739,
+            "end": 876,
+            "sourceIndexes": [],
+            "verdict": "unsupported",
+            "score": 0.035
+          },
+          {
+            "text": "The old regime\u2019s lower rates apply only after the \u20b95\u202fL\u2011\u20b910\u202fL slab (20\u202f%) and you receive only the \u20b950,000 standard deduction unless you claim other deductions (80C, HRA, home\u2011loan interest, etc.).",
+            "start": 881,
+            "end": 1077,
+            "sourceIndexes": [],
+            "verdict": "unsupported",
+            "score": 0.019
+          },
+          {
+            "text": "If you can claim **\u2265\u202f\u20b91.64\u202fL** of eligible deductions (e.g., 80C investments, HRA, home\u2011loan interest, 80D health\u2011insurance premium), the tax under the old regime may become comparable or lower.",
+            "start": 1123,
+            "end": 1317,
+            "sourceIndexes": [],
+            "verdict": "unsupported",
+            "score": 0.019
+          },
+          {
+            "text": "In that case you would need to re\u2011run the `income_tax_estimate` tool with those deductions entered.",
+            "start": 1318,
+            "end": 1417,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          },
+          {
+            "text": "List all deductions you are eligible for.",
+            "start": 1442,
+            "end": 1483,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          },
+          {
+            "text": "Use the same `income_tax_estimate` calculator with those amounts to compare both regimes again.",
+            "start": 1489,
+            "end": 1584,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          },
+          {
+            "text": "*This is educational information, not personalized tax advice.",
+            "start": 1588,
+            "end": 1650,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          },
+          {
+            "text": "Verify the final liability with a qualified tax professional or the Income Tax Department before filing.*",
+            "start": 1651,
+            "end": 1756,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    "error": null,
+    "model": "ensemble:sphura"
+  },
+  {
+    "persona": "rahul",
+    "question": "EMI for 25 lakh home loan at 8.5% for 20 years",
+    "notes": [
+      "ok"
+    ],
+    "conversationId": "c5b28818-2f31-4f02-9f94-cd47e11c8489",
+    "text": "**Home\u2011loan EMI (\u20b925\u202fL, 8.5\u202f% p.a., 20\u202fyears)**  \n\n| Item | Amount (\u20b9) |\n|------|------------|\n| **Monthly EMI** | **21,695.58** |\n| **Total payment over 20\u202fyears** | **52,06,939.40** |\n| **Total interest paid** | **27,06,939.40** |\n\n*Source: `emi` calculator result [1].*\n\n**How it works**  \n- Principal\u202f=\u202f\u20b925\u202fL  \n- Annual rate\u202f=\u202f8.5\u202f% \u2192 monthly rate *r*\u202f=\u202f8.5\u202f/\u202f12\u202f/\u202f100\u202f=\u202f0.00708333  \n- Tenure\u202f=\u202f20\u202fyears\u202f=\u202f240\u202fmonths (n)  \n- EMI formula:\u202f`EMI = P \u00d7 r \u00d7 (1+r)^n / ((1+r)^n \u2212 1)`  \n\n**What this means for you**  \n- The EMI of **\u20b921.7\u202fk** per month is a fixed cash\u2011outflow for the next two decades.  \n- Over the loan term you will pay **\u2248\u202f2.71\u202fL** in interest, so the total cost of the house is about **\u20b952.07\u202fL**.  \n\nIf you want to explore how a different tenure or rate would change the EMI, or compare this with a possible prepayment plan, just let me know and I can run another calculator.",
+    "firstTokenS": 63.65,
+    "latencyTotalS": 66.4,
+    "statuses": [
+      "thinking:Understanding your question",
+      "composing:Writing the answer",
+      "thinking:Retrying with GPT-OSS 120B",
+      "thinking:Retrying with Nemotron 3.5 Super VL",
+      "thinking:Retrying with Nemotron 3.5 Lightning",
+      "composing:Writing the answer",
+      "analyzing:Calculating",
+      "composing:Writing the answer",
+      "analyzing:Checking claims against sources"
+    ],
+    "steps": [
+      {
+        "id": "fe3e6307-2b7d-470c-be75-0abd161f9465",
+        "tool": "router",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "2e11213e-2c15-435d-babd-e56d82870ed3",
+        "tool": "memory_recall",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "84f174c4-8994-486f-bd18-8f6393e285f0",
+        "tool": "switch_model",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "45a61490-cd4d-428d-8902-86bffb3cd63a",
+        "tool": "switch_model",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "307ef433-22e3-4b12-9dec-147542f53564",
+        "tool": "switch_model",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "444d8e10-6d37-4d2a-95a7-cf9244c817e3",
+        "tool": "emi",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "d4fd7c9c-e9c3-48c1-b0a6-8c89037981ba",
+        "tool": "verify",
+        "status": "done",
+        "title": null
+      }
+    ],
+    "sourceCount": 1,
+    "verification": {
+      "verification": {
+        "score": 0.714,
+        "label": "mostly grounded",
+        "supported": 3,
+        "partial": 4,
+        "unsupported": 0,
+        "uncited": 3,
+        "model": "nli-deberta-v3-xsmall (ONNX)",
+        "sentences": [
+          {
+            "text": "**Home\u2011loan EMI (\u20b925\u202fL, 8.5\u202f% p.a., 20\u202fyears)**",
+            "start": 0,
+            "end": 47,
+            "sourceIndexes": [],
+            "verdict": "partial",
+            "score": 0.5
+          },
+          {
+            "text": "*Source: `emi` calculator result [1].*",
+            "start": 234,
+            "end": 272,
+            "sourceIndexes": [
+              1
+            ],
+            "verdict": "supported",
+            "score": 0.913
+          },
+          {
+            "text": "Principal\u202f=\u202f\u20b925\u202fL",
+            "start": 295,
+            "end": 312,
+            "sourceIndexes": [],
+            "verdict": "supported",
+            "score": 0.9
+          },
+          {
+            "text": "Annual rate\u202f=\u202f8.5\u202f% \u2192 monthly rate *r*\u202f=\u202f8.5\u202f/\u202f12\u202f/\u202f100\u202f=\u202f0.00708333",
+            "start": 317,
+            "end": 385,
+            "sourceIndexes": [],
+            "verdict": "partial",
+            "score": 0.618
+          },
+          {
+            "text": "Tenure\u202f=\u202f20\u202fyears\u202f=\u202f240\u202fmonths (n)",
+            "start": 390,
+            "end": 424,
+            "sourceIndexes": [],
+            "verdict": "partial",
+            "score": 0.5
+          },
+          {
+            "text": "EMI formula:\u202f`EMI = P \u00d7 r \u00d7 (1+r)^n / ((1+r)^n \u2212 1)`",
+            "start": 429,
+            "end": 481,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          },
+          {
+            "text": "**What this means for you**",
+            "start": 485,
+            "end": 512,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          },
+          {
+            "text": "The EMI of **\u20b921.7\u202fk** per month is a fixed cash\u2011outflow for the next two decades.",
+            "start": 517,
+            "end": 599,
+            "sourceIndexes": [],
+            "verdict": "supported",
+            "score": 0.9
+          },
+          {
+            "text": "Over the loan term you will pay **\u2248\u202f2.71\u202fL** in interest, so the total cost of the house is about **\u20b952.07\u202fL**.",
+            "start": 604,
+            "end": 715,
+            "sourceIndexes": [],
+            "verdict": "partial",
+            "score": 0.5
+          },
+          {
+            "text": "If you want to explore how a different tenure or rate would change the EMI, or compare this with a possible prepayment plan, just let me know and I can run another calculator.",
+            "start": 719,
+            "end": 894,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    "error": null,
+    "model": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b"
+  },
+  {
+    "persona": "rahul",
+    "question": "how does 80C work?",
+    "notes": [
+      "ok"
+    ],
+    "conversationId": "c5b28818-2f31-4f02-9f94-cd47e11c8489",
+    "text": "**Section\u202f80C \u2013 Overview (FY\u202f2026\u201127, AY\u202f2027\u201128)**  \n\n| Feature | Detail |\n|---------|--------|\n| **Maximum deduction** | \u20b91,50,000 per financial year (combined across all eligible items) |\n| **Who can claim** | Individual taxpayers (including HUFs) below 60\u202fyears, salaried or self\u2011employed |\n| **Effect on tax** | Reduces **taxable income**; the tax saved equals the marginal tax rate \u00d7 amount claimed (e.g., 20\u202f% slab \u2192 \u20b930,000 saving on a full \u20b91.5\u202fL claim) |\n| **Carry\u2011forward** | No carry\u2011forward; the limit must be used within the same FY, otherwise it is lost |\n\n### Commonly eligible instruments (any one or a mix, up to the \u20b91.5\u202fL cap)\n\n| Instrument | Typical lock\u2011in / conditions | Approx. annual return (indicative) |\n|------------|----------------------------|------------------------------------|\n| **Employee Provident Fund (EPF)** | Mandatory for salaried employees; contribution by employee is eligible | 8\u20119\u202f% |\n| **Public Provident Fund (PPF)** | 15\u2011year lock\u2011in, can be opened at any age | 7\u20118\u202f% |\n| **National Savings Certificate (NSC) \u2013 5\u202fyr** | No premature withdrawal; interest taxable but qualifies for 80C | 6\u20117\u202f% |\n| **Equity\u2011Linked Savings Scheme (ELSS) mutual funds** | Minimum 3\u2011year lock\u2011in; market\u2011linked returns | 10\u201115\u202f%+ (historical) |\n| **Life\u2011insurance premium** | Policy must be for life cover; premium up to \u20b91.5\u202fL qualifies | N/A |\n| **Unit\u2011Linked Insurance Plans (ULIP)** | Minimum 5\u2011year lock\u2011in; part of premium qualifies | Market\u2011linked |\n| **Sukanya Samriddhi Yojana** | For a girl child; 1.5\u202fL cap per child, up to \u20b91.5\u202fL per FY | 7\u20118\u202f% |\n| **Home\u2011loan principal repayment** | Up to \u20b91.5\u202fL of the principal component (separate from interest deduction under 24(b)) | N/A |\n| **Tax\u2011saving Fixed Deposit (5\u2011year)** | Fixed deposit with a 5\u2011year tenure; interest taxable | 5\u20116\u202f% |\n| **Senior Citizen Savings Scheme (SCSS)** | For seniors (\u2265\u202f60\u202fy); up to \u20b91.5\u202fL per FY | 7\u20118\u202f% |\n\n### How it reduces your tax bill  \n\n1. **Calculate gross taxable income** (e.g., \u20b912\u202fL salary).  \n2. **Subtract 80C deductions** (up to \u20b91.5\u202fL) \u2192 lower *taxable income*.  \n3. **Apply the tax slabs** of the chosen regime (old or new).  \n4. **Tax saved** \u2248 *marginal tax rate*\u202f\u00d7\u202f*amount claimed*.  \n   - Example (old regime, 20\u202f% slab on income above \u20b95\u202fL): full \u20b91.5\u202fL claim saves **\u20b930,000** in tax.\n\n### Practical tips  \n\n- **Plan early**: Contributions to EPF, PPF, ELSS, etc., should be made before 31\u202fMarch to count for the FY.  \n- **Mix instruments**: Combine low\u2011risk (PPF, NSC) with market\u2011linked (ELSS) to balance safety and growth.  \n- **Avoid over\u2011investing**: Any amount above \u20b91.5\u202fL does not give additional tax benefit.  \n- **Documentation**: Keep receipts, passbooks, and Form\u202f16/16A statements for proof during filing.  \n\n**Bottom line:** Section\u202f80C lets you shelter up to \u20b91.5\u202fL of your income from tax each year. By allocating savings to eligible instruments, you lower your taxable income and consequently your tax outflow, while simultaneously building a financial corpus.",
+    "firstTokenS": 14.02,
+    "latencyTotalS": 14.09,
+    "statuses": [
+      "thinking:Understanding your question",
+      "composing:Writing the answer",
+      "thinking:Thinking it through",
+      "composing:Writing the answer",
+      "thinking:Asking 3 models",
+      "composing:Merging the answers"
+    ],
+    "steps": [
+      {
+        "id": "fe249959-c1da-4054-a09d-96d025f43c8e",
+        "tool": "router",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "2c7d769e-d72e-4bf5-b628-86613c21a3b8",
+        "tool": "memory_recall",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "d58249df-73c5-4a47-9396-15297aaf6bae",
+        "tool": "ensemble",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "e2f6f648-e976-4a02-9cea-0eacf394f470",
+        "tool": "ensemble_member",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "90f2def4-30a2-47d3-9c78-c7d7f07b303e",
+        "tool": "ensemble_member",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "b58b9e3f-80de-442c-a321-d6bb948d8035",
+        "tool": "ensemble_member",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "3e8d575d-af30-417e-bc7d-3fce3b8d91c7",
+        "tool": "ensemble_merge",
+        "status": "error",
+        "title": null
+      }
+    ],
+    "sourceCount": 0,
+    "verification": null,
+    "error": null,
+    "model": "ensemble:sphura"
+  },
+  {
+    "persona": "meera",
+    "question": "is my liquidity healthy?",
+    "notes": [
+      "ok"
+    ],
+    "conversationId": "6d9cfe39-7d3c-4174-bb5a-0b81234adde3",
+    "text": "**Liquidity assessment \u2013 healthy**  \n\n| Metric | Value | Benchmark |\n|--------|-------|-----------|\n| Current ratio | 3.02 | >\u202f1.5 is considered comfortable\u30101\u3011 |\n| Quick ratio (ex\u2011inventory) | 2.52 | >\u202f1.0 indicates ability to meet obligations without selling stock\u30101\u3011 |\n| Current assets | $1,960,000 | \u2013 |\n| Current liabilities | $650,000 | \u2013 |\n| Inventory | $320,000 (excluded from quick assets)\u30101\u3011 |\n\nThe firm holds roughly three dollars of current assets for every dollar of current liability, and even after removing inventory the quick assets cover short\u2011term debt about 2\u00bd\u2011to\u20111. Both ratios are well above typical thresholds, signalling strong short\u2011term liquidity.\n\n### Points to watch\n1. **Accounts receivable (31\u201190\u202fdays)** is flagged as high\u2011risk; delayed collections could erode the quick ratio.  \n2. **Revolving credit line due Q3\u202f2025** should be monitored to avoid an unexpected rise in current liabilities.  \n\n### Concrete suggestions\n1. **Strengthen receivable management** \u2013 set clear 30\u2011day payment terms, run weekly aging reports, and follow up on any 31\u201190\u202fday balances.  \n2. **Maintain a cash buffer** \u2013 keep liquid cash or marketable securities equivalent to 3\u20136\u202fmonths of operating expenses to protect against unforeseen outflows.  \n3. **Use the credit line prudently** \u2013 treat it as a contingency rather than a regular funding source, and confirm renewal or repayment plans well before the Q3\u202f2025 deadline.  \n\nOverall, the balance\u2011sheet metrics indicate robust liquidity, provided the firm continues to manage receivables and credit\u2011line exposure carefully.\n\n```chart\n{\"type\":\"bar\",\"title\":\"Balance sheet\",\"unit\":\"$\",\"labels\":[\"Total assets\",\"Total liabilities\",\"Equity\"],\"series\":[{\"name\":\"Amount\",\"data\":[4610000.0,2450000.0,2160000.0]}]}\n```\n\n```chart\n{\"type\":\"bar\",\"title\":\"By category\",\"unit\":\"$\",\"labels\":[\"Current Assets\",\"Non-Current Assets\",\"Current Liabilities\",\"Non-Current Liabilities\",\"Equity\"],\"series\":[{\"name\":\"Amount\",\"data\":[1960000.0,2650000.0,650000.0,1800000.0,2160000.0]}]}\n```",
+    "firstTokenS": 10.26,
+    "latencyTotalS": 12.64,
+    "statuses": [
+      "thinking:Understanding your question",
+      "analyzing:Crunching your statements",
+      "composing:Writing the answer",
+      "thinking:Thinking it through",
+      "composing:Writing the answer",
+      "thinking:Asking 3 models",
+      "composing:Merging the answers",
+      "analyzing:Checking claims against sources"
+    ],
+    "steps": [
+      {
+        "id": "01b99802-5160-4e38-8f3f-692f24146876",
+        "tool": "router",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "9f3a4fb5-d1da-4bae-8748-07e54c62b59a",
+        "tool": "finance_analyze",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "3c7dff5d-3385-4690-b2a7-244fd01c12ef",
+        "tool": "memory_recall",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "fb2550cf-5abd-48de-bf9d-19294fc20ddb",
+        "tool": "ensemble",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "cc4c5fd6-2bd8-45e4-b800-217863cbf50a",
+        "tool": "ensemble_member",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "3b403c0e-fc30-4df8-9a52-23fab1aa5357",
+        "tool": "ensemble_member",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "b8c3ee3c-3e5e-4b82-8e5f-5ee7a7ca7a99",
+        "tool": "ensemble_member",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "cb6c856d-59cd-474f-a668-1718de039fdf",
+        "tool": "ensemble_merge",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "ff777f1c-516e-4876-ac04-28558bbeae29",
+        "tool": "verify",
+        "status": "done",
+        "title": null
+      }
+    ],
+    "sourceCount": 1,
+    "verification": {
+      "verification": {
+        "score": 1.0,
+        "label": "grounded",
+        "supported": 4,
+        "partial": 0,
+        "unsupported": 0,
+        "uncited": 5,
+        "model": "nli-deberta-v3-xsmall (ONNX)",
+        "sentences": [
+          {
+            "text": "**Liquidity assessment \u2013 healthy**",
+            "start": 0,
+            "end": 34,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          },
+          {
+            "text": "The firm holds roughly three dollars of current assets for every dollar of current liability, and even after removing inventory the quick assets cover short\u2011term debt about 2\u00bd\u2011to\u20111.",
+            "start": 404,
+            "end": 585,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          },
+          {
+            "text": "Both ratios are well above typical thresholds, signalling strong short\u2011term liquidity.",
+            "start": 586,
+            "end": 672,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          },
+          {
+            "text": "**Accounts receivable (31\u201190\u202fdays)** is flagged as high\u2011risk; delayed collections could erode the quick ratio.",
+            "start": 697,
+            "end": 807,
+            "sourceIndexes": [],
+            "verdict": "supported",
+            "score": 0.9
+          },
+          {
+            "text": "**Revolving credit line due Q3\u202f2025** should be monitored to avoid an unexpected rise in current liabilities.",
+            "start": 813,
+            "end": 922,
+            "sourceIndexes": [],
+            "verdict": "supported",
+            "score": 0.9
+          },
+          {
+            "text": "**Strengthen receivable management** \u2013 set clear 30\u2011day payment terms, run weekly aging reports, and follow up on any 31\u201190\u202fday balances.",
+            "start": 954,
+            "end": 1091,
+            "sourceIndexes": [],
+            "verdict": "supported",
+            "score": 0.9
+          },
+          {
+            "text": "**Maintain a cash buffer** \u2013 keep liquid cash or marketable securities equivalent to 3\u20136\u202fmonths of operating expenses to protect against unforeseen outflows.",
+            "start": 1097,
+            "end": 1254,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          },
+          {
+            "text": "**Use the credit line prudently** \u2013 treat it as a contingency rather than a regular funding source, and confirm renewal or repayment plans well before the Q3\u202f2025 deadline.",
+            "start": 1260,
+            "end": 1432,
+            "sourceIndexes": [],
+            "verdict": "supported",
+            "score": 0.9
+          },
+          {
+            "text": "Overall, the balance\u2011sheet metrics indicate robust liquidity, provided the firm continues to manage receivables and credit\u2011line exposure carefully.",
+            "start": 1436,
+            "end": 1583,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    "error": null,
+    "model": "ensemble:sphura"
+  },
+  {
+    "persona": "meera",
+    "question": "current ratio and what it means",
+    "notes": [
+      "ok"
+    ],
+    "conversationId": "6d9cfe39-7d3c-4174-bb5a-0b81234adde3",
+    "text": "\n\n```chart\n{\"type\":\"bar\",\"title\":\"Balance sheet\",\"unit\":\"$\",\"labels\":[\"Total assets\",\"Total liabilities\",\"Equity\"],\"series\":[{\"name\":\"Amount\",\"data\":[4610000.0,2450000.0,2160000.0]}]}\n```\n\n```chart\n{\"type\":\"bar\",\"title\":\"By category\",\"unit\":\"$\",\"labels\":[\"Current Assets\",\"Non-Current Assets\",\"Current Liabilities\",\"Non-Current Liabilities\",\"Equity\"],\"series\":[{\"name\":\"Amount\",\"data\":[1960000.0,2650000.0,650000.0,1800000.0,2160000.0]}]}\n```",
+    "firstTokenS": 7.73,
+    "latencyTotalS": 8.15,
+    "statuses": [
+      "thinking:Understanding your question",
+      "analyzing:Crunching your statements",
+      "composing:Writing the answer",
+      "thinking:Retrying with GPT-OSS 120B",
+      "thinking:Retrying with Nemotron 3.5 Super VL",
+      "composing:Writing the answer",
+      "analyzing:Checking claims against sources"
+    ],
+    "steps": [
+      {
+        "id": "20529e21-a12f-439d-acd0-d6157ebaa7ab",
+        "tool": "router",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "add628e8-6c5d-4e95-8be9-b80ecc850774",
+        "tool": "finance_analyze",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "06de4fb0-a725-47b8-abb7-a073e5edd170",
+        "tool": "memory_recall",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "f6c87698-9f33-46f2-a9f2-3cd3e8ce1910",
+        "tool": "switch_model",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "eb7c9d59-ddb5-4e9f-ac58-a57264e4a467",
+        "tool": "switch_model",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "d17be718-4d52-421f-9fd5-2509a78111cf",
+        "tool": "verify",
+        "status": "done",
+        "title": null
+      }
+    ],
+    "sourceCount": 1,
+    "verification": {
+      "verification": {
+        "score": 0.833,
+        "label": "mostly grounded",
+        "supported": 5,
+        "partial": 0,
+        "unsupported": 1,
+        "uncited": 8,
+        "model": "nli-deberta-v3-xsmall (ONNX)",
+        "sentences": [
+          {
+            "text": "**Current ratio \u2014 what it is and what yours means**",
+            "start": 0,
+            "end": 51,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          },
+          {
+            "text": "The current ratio measures short-term liquidity \u2014 whether a business can pay its obligations due within one year using assets expected to turn into cash within one year.",
+            "start": 69,
+            "end": 238,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          },
+          {
+            "text": "\\text{Current Ratio} = \\frac{\\text{Current Assets}}{\\text{Current Liabilities}}",
+            "start": 253,
+            "end": 332,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          },
+          {
+            "text": "This means you hold about **$3.02 of current assets for every $1 of current liability**.",
+            "start": 491,
+            "end": 579,
+            "sourceIndexes": [],
+            "verdict": "supported",
+            "score": 0.9
+          },
+          {
+            "text": "A ratio above 1.0 generally indicates you can cover short-term debts; a ratio around 2.0 or higher is typically considered comfortable.",
+            "start": 580,
+            "end": 715,
+            "sourceIndexes": [],
+            "verdict": "unsupported",
+            "score": 0.022
+          },
+          {
+            "text": "At 3.02, your liquidity position is strong.",
+            "start": 716,
+            "end": 759,
+            "sourceIndexes": [],
+            "verdict": "supported",
+            "score": 0.9
+          },
+          {
+            "text": "**What it means in practice**",
+            "start": 761,
+            "end": 790,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          },
+          {
+            "text": "You can likely pay suppliers, short-term loans, and other near-term bills without needing to sell long-term assets or raise emergency financing.",
+            "start": 794,
+            "end": 938,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          },
+          {
+            "text": "It gives you a cushion if revenue dips or expenses rise unexpectedly.",
+            "start": 941,
+            "end": 1010,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          },
+          {
+            "text": "A very high ratio can also mean cash is sitting idle instead of being invested or used to grow the business.",
+            "start": 1027,
+            "end": 1135,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          },
+          {
+            "text": "The quality of current assets matters: your accounts receivable aged 31\u201390 days is flagged as high risk, so some of that $1,960,000 may not convert to cash on time.",
+            "start": 1138,
+            "end": 1302,
+            "sourceIndexes": [],
+            "verdict": "supported",
+            "score": 0.9
+          },
+          {
+            "text": "The current ratio includes inventory; if inventory is hard to sell quickly, the quick ratio (2.52 for you, which excludes inventory) is a stricter test.",
+            "start": 1305,
+            "end": 1457,
+            "sourceIndexes": [],
+            "verdict": "supported",
+            "score": 0.9
+          },
+          {
+            "text": "**Bottom line:** Your current ratio of 3.02 signals healthy short-term liquidity.",
+            "start": 1459,
+            "end": 1540,
+            "sourceIndexes": [],
+            "verdict": "supported",
+            "score": 0.9
+          },
+          {
+            "text": "Keep an eye on receivable collections and avoid letting excess cash sit idle without a purpose.",
+            "start": 1541,
+            "end": 1636,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    "error": null,
+    "model": "nvidia:nvidia/nemotron-3.5-super-vl-120b-a12b"
+  },
+  {
+    "persona": "meera",
+    "question": "what should I watch?",
+    "notes": [
+      "ok"
+    ],
+    "conversationId": "6d9cfe39-7d3c-4174-bb5a-0b81234adde3",
+    "text": "**What to watch**\n\nBased on your balance sheet, here are the key areas to monitor:\n\n| Area | Amount | Why it matters |\n|------|--------|----------------|\n| Accounts Receivable (31\u201390 days) | Part of current assets | Flagged as high risk; slow collections can erode your quick ratio of 2.52 |\n| Revolving Credit Line | Due Q3 2025 | Short-term obligation that needs renewal or repayment planning |\n| Equipment Financing Notes | $1,800,000 | 73% of total liabilities; a 5-year term debt that drives your debt-to-equity of 1.13 |\n| Land & Buildings | $1,500,000 | 33% of total assets; illiquid, so it does not help meet near-term obligations |\n| Computer Hardware & Servers | Depreciated 30% | Asset value is declining; plan for replacement capital expenditure |\n\n**Concrete actions**\n\n1. **Tighten receivables** \u2014 invoice promptly, follow up on 31\u201390 day balances, and consider shorter payment terms to protect cash flow.\n2. **Plan the credit line** \u2014 decide well before Q3 2025 whether to renew, repay, or refinance the revolving line so it does not become a surprise current liability.\n3. **Monitor leverage** \u2014 with debt-to-equity at 1.13, avoid taking on additional long-term debt until equity grows or the equipment notes are paid down.\n\nYour liquidity is strong today, but these items determine whether it stays that way.\n\n```chart\n{\"type\":\"bar\",\"title\":\"Balance sheet\",\"unit\":\"$\",\"labels\":[\"Total assets\",\"Total liabilities\",\"Equity\"],\"series\":[{\"name\":\"Amount\",\"data\":[4610000.0,2450000.0,2160000.0]}]}\n```\n\n```chart\n{\"type\":\"bar\",\"title\":\"By category\",\"unit\":\"$\",\"labels\":[\"Current Assets\",\"Non-Current Assets\",\"Current Liabilities\",\"Non-Current Liabilities\",\"Equity\"],\"series\":[{\"name\":\"Amount\",\"data\":[1960000.0,2650000.0,650000.0,1800000.0,2160000.0]}]}\n```",
+    "firstTokenS": 1.0,
+    "latencyTotalS": 4.41,
+    "statuses": [
+      "thinking:Understanding your question",
+      "analyzing:Crunching your statements",
+      "composing:Writing the answer",
+      "analyzing:Checking claims against sources"
+    ],
+    "steps": [
+      {
+        "id": "5483d3e5-bb13-4a6d-9018-60ee0597f939",
+        "tool": "router",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "9ca19aaa-d2e5-4afa-a169-bf562fbfbad4",
+        "tool": "finance_analyze",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "115973af-5bec-437e-a066-8600033ba166",
+        "tool": "memory_recall",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "b4e08361-a84b-4c5e-9b95-aed1af11c043",
+        "tool": "verify",
+        "status": "done",
+        "title": null
+      }
+    ],
+    "sourceCount": 1,
+    "verification": {
+      "verification": {
+        "score": 1.0,
+        "label": "grounded",
+        "supported": 3,
+        "partial": 0,
+        "unsupported": 0,
+        "uncited": 2,
+        "model": "nli-deberta-v3-xsmall (ONNX)",
+        "sentences": [
+          {
+            "text": "Based on your balance sheet, here are the key areas to monitor:",
+            "start": 19,
+            "end": 82,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          },
+          {
+            "text": "**Tighten receivables** \u2014 invoice promptly, follow up on 31\u201390 day balances, and consider shorter payment terms to protect cash flow.",
+            "start": 786,
+            "end": 919,
+            "sourceIndexes": [],
+            "verdict": "supported",
+            "score": 0.9
+          },
+          {
+            "text": "**Plan the credit line** \u2014 decide well before Q3 2025 whether to renew, repay, or refinance the revolving line so it does not become a surprise current liability.",
+            "start": 923,
+            "end": 1085,
+            "sourceIndexes": [],
+            "verdict": "supported",
+            "score": 0.9
+          },
+          {
+            "text": "**Monitor leverage** \u2014 with debt-to-equity at 1.13, avoid taking on additional long-term debt until equity grows or the equipment notes are paid down.",
+            "start": 1089,
+            "end": 1239,
+            "sourceIndexes": [],
+            "verdict": "supported",
+            "score": 0.9
+          },
+          {
+            "text": "Your liquidity is strong today, but these items determine whether it stays that way.",
+            "start": 1241,
+            "end": 1325,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    "error": null,
+    "model": "nvidia:nvidia/nemotron-3.5-super-vl-120b-a12b"
+  },
+  {
+    "persona": "rohan",
+    "question": "where did my money go last quarter?",
+    "notes": [
+      "ok"
+    ],
+    "conversationId": "3c06dfc0-5ea3-4537-a37c-fb8b55253f77",
+    "text": "\n\n```chart\n{\"type\":\"pie\",\"title\":\"Spending by category\",\"unit\":\"\u20b9\",\"labels\":[\"Rent\",\"Transfers\",\"Salary\",\"Groceries\",\"Investments\",\"Travel\",\"Other\"],\"series\":[{\"name\":\"Spent\",\"data\":[75957.87,74852.55,25350.0,20551.44,15000.0,12505.84,26329.74]}]}\n```\n\n```chart\n{\"type\":\"bar\",\"title\":\"Money in and out by month\",\"unit\":\"\u20b9\",\"labels\":[\"Jul 2026\",\"Aug 2026\",\"Sep 2026\"],\"series\":[{\"name\":\"In\",\"data\":[94350.0,92550.0,92700.0]},{\"name\":\"Out\",\"data\":[82665.49,85935.33,81946.62]}]}\n```",
+    "firstTokenS": 18.1,
+    "latencyTotalS": 25.44,
+    "statuses": [
+      "thinking:Understanding your question",
+      "analyzing:Crunching your statements",
+      "composing:Writing the answer",
+      "thinking:Retrying with GPT-OSS 120B",
+      "thinking:Retrying with Nemotron 3.5 Super VL",
+      "composing:Writing the answer",
+      "analyzing:Checking claims against sources"
+    ],
+    "steps": [
+      {
+        "id": "acd85346-0b30-4a43-84d4-a10db68efcbb",
+        "tool": "router",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "053df86c-0164-426c-9310-8e35e1227fc0",
+        "tool": "finance_analyze",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "7194d271-1c93-4c12-a42c-20a716673ee5",
+        "tool": "memory_recall",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "82d581e6-fad4-46a6-9633-f9aa92980e03",
+        "tool": "switch_model",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "851aaa63-b5bb-4f8c-9290-21bd406080d6",
+        "tool": "switch_model",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "2beeb9d9-172f-4b0a-9ee9-5884e4e8cb9b",
+        "tool": "verify",
+        "status": "done",
+        "title": null
+      }
+    ],
+    "sourceCount": 1,
+    "verification": {
+      "verification": {
+        "score": 0.889,
+        "label": "grounded",
+        "supported": 7,
+        "partial": 2,
+        "unsupported": 0,
+        "uncited": 2,
+        "model": "nli-deberta-v3-xsmall (ONNX)",
+        "sentences": [
+          {
+            "text": "Here is where your money went in Q2 FY27 (1 Jul \u2013 30 Sep 2026), based on the computed statement analysis [1].",
+            "start": 0,
+            "end": 109,
+            "sourceIndexes": [
+              1
+            ],
+            "verdict": "supported",
+            "score": 0.9
+          },
+          {
+            "text": "Rent is your largest single outflow at \u20b975,958 across three months (\u20b924,000 per month to Sunita Deshpande plus smaller rent-related items).",
+            "start": 993,
+            "end": 1132,
+            "sourceIndexes": [],
+            "verdict": "supported",
+            "score": 0.9
+          },
+          {
+            "text": "Transfers are the second-biggest bucket at \u20b974,853 across 50 transactions \u2014 worth reviewing to see how much is internal movement versus actual spending.",
+            "start": 1135,
+            "end": 1287,
+            "sourceIndexes": [],
+            "verdict": "supported",
+            "score": 0.9
+          },
+          {
+            "text": "You saved every month; the balance rose from \u20b964,210 to \u20b993,263 [1].",
+            "start": 1290,
+            "end": 1358,
+            "sourceIndexes": [
+              1
+            ],
+            "verdict": "supported",
+            "score": 0.9
+          },
+          {
+            "text": "**Cap transfer leakage:** With 50 transfer transactions totalling \u20b974,853, categorise them to separate genuine spending from account shuffling.",
+            "start": 1380,
+            "end": 1523,
+            "sourceIndexes": [],
+            "verdict": "supported",
+            "score": 0.9
+          },
+          {
+            "text": "Even a 10% reduction frees ~\u20b97,500 per quarter.",
+            "start": 1524,
+            "end": 1571,
+            "sourceIndexes": [],
+            "verdict": "partial",
+            "score": 0.5
+          },
+          {
+            "text": "**Automate the rent buffer:** Rent is fixed at \u20b924,000/month.",
+            "start": 1575,
+            "end": 1636,
+            "sourceIndexes": [],
+            "verdict": "supported",
+            "score": 0.9
+          },
+          {
+            "text": "Keep that amount plus one month\u2019s buffer in a separate account so it never competes with discretionary spends.",
+            "start": 1637,
+            "end": 1747,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          },
+          {
+            "text": "**Redirect one discretionary category:** Travel (\u20b912,506) and dining (\u20b92,283) together are ~\u20b914,800.",
+            "start": 1751,
+            "end": 1851,
+            "sourceIndexes": [],
+            "verdict": "partial",
+            "score": 0.5
+          },
+          {
+            "text": "Shifting half of that into your existing \u20b95,000 monthly SIP would boost long-term investing without changing your lifestyle much.",
+            "start": 1852,
+            "end": 1981,
+            "sourceIndexes": [],
+            "verdict": "supported",
+            "score": 0.9
+          },
+          {
+            "text": "This is spending analysis only, not personalised investment advice.",
+            "start": 1983,
+            "end": 2050,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    "error": null,
+    "model": "nvidia:nvidia/nemotron-3.5-super-vl-120b-a12b"
+  },
+  {
+    "persona": "rohan",
+    "question": "how much did I spend on food in total?",
+    "notes": [
+      "ok"
+    ],
+    "conversationId": "3c06dfc0-5ea3-4537-a37c-fb8b55253f77",
+    "text": "You spent **\u20b922,834** on food in Q2 FY27 (1 Jul \u2013 30 Sep 2026), made up of:\n\n| Category | Amount | Transactions |\n|---|---|---|\n| Groceries | \u20b920,551 | 13 |\n| Dining | \u20b92,283 | 3 |\n| **Total food** | **\u20b922,834** | **16** |\n\nThat is about **\u20b97,611 per month** on food, or roughly **9%** of your total quarterly spending of \u20b92,50,547 [1].\n\nGroceries dominate at \u20b920,551 across 13 transactions, while dining out is a smaller \u20b92,283 across 3 transactions [1].\n\nIf you want to trim food spending, groceries offer the biggest lever \u2014 even a 10% reduction would save roughly \u20b92,055 per quarter [1].\n\nThis is spending analysis only, not personalised financial advice.\n\n```chart\n{\"type\":\"pie\",\"title\":\"Spending by category\",\"unit\":\"\u20b9\",\"labels\":[\"Rent\",\"Transfers\",\"Salary\",\"Groceries\",\"Investments\",\"Travel\",\"Other\"],\"series\":[{\"name\":\"Spent\",\"data\":[75957.87,74852.55,25350.0,20551.44,15000.0,12505.84,26329.74]}]}\n```\n\n```chart\n{\"type\":\"bar\",\"title\":\"Money in and out by month\",\"unit\":\"\u20b9\",\"labels\":[\"Jul 2026\",\"Aug 2026\",\"Sep 2026\"],\"series\":[{\"name\":\"In\",\"data\":[94350.0,92550.0,92700.0]},{\"name\":\"Out\",\"data\":[82665.49,85935.33,81946.62]}]}\n```",
+    "firstTokenS": 27.83,
+    "latencyTotalS": 30.69,
+    "statuses": [
+      "thinking:Understanding your question",
+      "analyzing:Crunching your statements",
+      "composing:Writing the answer",
+      "analyzing:Checking claims against sources"
+    ],
+    "steps": [
+      {
+        "id": "3ee35b84-b486-41d8-9522-34108d2e9fde",
+        "tool": "router",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "6237671f-54fd-4bb7-ae70-48021422f794",
+        "tool": "finance_analyze",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "353291bf-da15-49a1-b3df-4f7858d83ce8",
+        "tool": "memory_recall",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "3778a818-b5eb-4a45-8446-48e83ff8d6e9",
+        "tool": "verify",
+        "status": "done",
+        "title": null
+      }
+    ],
+    "sourceCount": 1,
+    "verification": {
+      "verification": {
+        "score": 0.667,
+        "label": "mostly grounded",
+        "supported": 1,
+        "partial": 2,
+        "unsupported": 0,
+        "uncited": 2,
+        "model": "nli-deberta-v3-xsmall (ONNX)",
+        "sentences": [
+          {
+            "text": "You spent **\u20b922,834** on food in Q2 FY27 (1 Jul \u2013 30 Sep 2026), made up of:",
+            "start": 0,
+            "end": 75,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          },
+          {
+            "text": "That is about **\u20b97,611 per month** on food, or roughly **9%** of your total quarterly spending of \u20b92,50,547 [1].",
+            "start": 224,
+            "end": 336,
+            "sourceIndexes": [
+              1
+            ],
+            "verdict": "partial",
+            "score": 0.5
+          },
+          {
+            "text": "Groceries dominate at \u20b920,551 across 13 transactions, while dining out is a smaller \u20b92,283 across 3 transactions [1].",
+            "start": 338,
+            "end": 455,
+            "sourceIndexes": [
+              1
+            ],
+            "verdict": "supported",
+            "score": 0.9
+          },
+          {
+            "text": "If you want to trim food spending, groceries offer the biggest lever \u2014 even a 10% reduction would save roughly \u20b92,055 per quarter [1].",
+            "start": 457,
+            "end": 591,
+            "sourceIndexes": [
+              1
+            ],
+            "verdict": "partial",
+            "score": 0.5
+          },
+          {
+            "text": "This is spending analysis only, not personalised financial advice.",
+            "start": 593,
+            "end": 659,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    "error": null,
+    "model": "nvidia:nvidia/nemotron-3.5-super-vl-120b-a12b"
+  },
+  {
+    "persona": "meera_xlsx",
+    "question": "what is my current ratio and is it healthy?",
+    "notes": [
+      "ok"
+    ],
+    "conversationId": "abea76b6-bb24-4049-a502-d94c4ec9e92a",
+    "text": "**Current ratio:** **1.52**\u202f\u00d7\u202f[1] \u2013 this exceeds the typical benchmark of\u202f1.2\u202ffor small enterprises, indicating that the bakery can comfortably meet its short\u2011term obligations.\n\n### Why the ratio is considered healthy\n- **Liquidity cushion:** Current assets of\u202f\u20b94,88,300\u202fcover current liabilities of\u202f\u20b93,20,900, leaving a 52\u202f% excess\u202f[1].\n- **Quick ratio:** At\u202f1.08\u202f(\u20b94,88,300\u202f\u2013\u202f\u20b996,500 inventory\u202f\u00f7\u202f\u20b93,20,900), the business can settle immediate debts without relying on stock sales\u202f[1].\n- **Leverage:** Debt\u2011to\u2011equity of\u202f0.75\u202fshows moderate borrowing, with the term loan of\u202f\u20b94,20,000\u202fbeing the largest liability\u202f[1].\n\n### 2\u20133 concrete actions to sustain or improve liquidity\n| Action | Rationale |\n|---|---|\n| **Maintain a 20\u202f% buffer** \u2013 keep current assets at least\u202f\u20b93,84,000\u202f(1.2\u202f\u00d7\u202f\u20b93,20,900) to absorb unexpected cash outflows\u202f[1]. | Preserves the ratio above the lower safe limit. |\n| **Monitor inventory levels** \u2013 inventory (\u20b996,500) is ~20\u202f% of current assets; improve turnover to free cash and prevent ratio erosion if sales dip\u202f[1]. | Enhances the quick ratio and reduces cash tied up. |\n| **Schedule loan repayments** \u2013 the term loan of\u202f\u20b94,20,000\u202faccounts for 57\u202f% of total liabilities; align repayments with cash inflows to avoid a drop below the 1.2 threshold\u202f[1]. | Prevents sudden liquidity strain. |\n\nOverall, a current ratio of\u202f1.52 signals a healthy liquidity position for FY\u202f2026. Regularly reviewing the above areas will help maintain this strength.\n\n```chart\n{\"type\":\"bar\",\"title\":\"Balance sheet\",\"unit\":\"\u20b9\",\"labels\":[\"Total assets\",\"Total liabilities\",\"Equity\"],\"series\":[{\"name\":\"Amount\",\"data\":[1723300.0,740900.0,982400.0]}]}\n```\n\n```chart\n{\"type\":\"bar\",\"title\":\"By category\",\"unit\":\"\u20b9\",\"labels\":[\"Capital Account\",\"Add: Net profit for the year\",\"Less: Drawings\",\"Term loan - Canara Bank (oven & equipment)\",\"Sundry creditors (flour, dairy suppliers)\",\"GST payable\",\"Outstanding salaries\",\"Bank overdraft\",\"Shop premises (leasehold improvements)\",\"Ovens and kitchen equipment\",\"Delivery scooter\",\"Closing stock\"],\"series\":[{\"name\":\"Amount\",\"data\":[850000.0,312400.0,-180000.0,420000.0,168500.0,23400.0,54000.0,75000.0,640000.0,510000.0,85000.0,96500.0]}]}\n```",
+    "firstTokenS": 10.25,
+    "latencyTotalS": 13.21,
+    "statuses": [
+      "thinking:Understanding your question",
+      "analyzing:Crunching your statements",
+      "composing:Writing the answer",
+      "thinking:Thinking it through",
+      "composing:Writing the answer",
+      "thinking:Asking 3 models",
+      "composing:Merging the answers",
+      "analyzing:Checking claims against sources"
+    ],
+    "steps": [
+      {
+        "id": "aa9e8f8b-a8b8-494c-b88f-40408f1a8111",
+        "tool": "router",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "725f08f6-b15d-48b7-94c8-8a44d5a284d8",
+        "tool": "finance_analyze",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "dabb3abe-9978-443e-8d1a-40cd1f52ac32",
+        "tool": "memory_recall",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "99968dbc-98a7-4ce0-95c1-1f5f5dfca6ae",
+        "tool": "ensemble",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "74ffa7b5-f0b2-4838-97d6-ae0ee10c6f18",
+        "tool": "ensemble_member",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "16ac777c-d6a7-4a49-a765-0b962f35e36a",
+        "tool": "ensemble_member",
+        "status": "error",
+        "title": null
+      },
+      {
+        "id": "d67924e7-4a05-4140-8429-29d320a130af",
+        "tool": "ensemble_member",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "3c1d521e-1cf4-411b-b368-1ee9bc377571",
+        "tool": "ensemble_merge",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "8cfe863c-e858-423d-83c9-2cdfb4b0ceaf",
+        "tool": "verify",
+        "status": "done",
+        "title": null
+      }
+    ],
+    "sourceCount": 1,
+    "verification": {
+      "verification": {
+        "score": 0.8,
+        "label": "mostly grounded",
+        "supported": 3,
+        "partial": 2,
+        "unsupported": 0,
+        "uncited": 1,
+        "model": "nli-deberta-v3-xsmall (ONNX)",
+        "sentences": [
+          {
+            "text": "**Current ratio:** **1.52**\u202f\u00d7\u202f[1] \u2013 this exceeds the typical benchmark of\u202f1.2\u202ffor small enterprises, indicating that the bakery can comfortably meet its short\u2011term obligations.",
+            "start": 0,
+            "end": 176,
+            "sourceIndexes": [
+              1
+            ],
+            "verdict": "supported",
+            "score": 0.9
+          },
+          {
+            "text": "**Liquidity cushion:** Current assets of\u202f\u20b94,88,300\u202fcover current liabilities of\u202f\u20b93,20,900, leaving a 52\u202f% excess\u202f[1].",
+            "start": 220,
+            "end": 337,
+            "sourceIndexes": [
+              1
+            ],
+            "verdict": "partial",
+            "score": 0.5
+          },
+          {
+            "text": "**Quick ratio:** At\u202f1.08\u202f(\u20b94,88,300\u202f\u2013\u202f\u20b996,500 inventory\u202f\u00f7\u202f\u20b93,20,900), the business can settle immediate debts without relying on stock sales\u202f[1].",
+            "start": 340,
+            "end": 485,
+            "sourceIndexes": [
+              1
+            ],
+            "verdict": "supported",
+            "score": 0.909
+          },
+          {
+            "text": "**Leverage:** Debt\u2011to\u2011equity of\u202f0.75\u202fshows moderate borrowing, with the term loan of\u202f\u20b94,20,000\u202fbeing the largest liability\u202f[1].",
+            "start": 488,
+            "end": 615,
+            "sourceIndexes": [
+              1
+            ],
+            "verdict": "supported",
+            "score": 0.968
+          },
+          {
+            "text": "Overall, a current ratio of\u202f1.52 signals a healthy liquidity position for FY\u202f2026.",
+            "start": 1316,
+            "end": 1398,
+            "sourceIndexes": [],
+            "verdict": "partial",
+            "score": 0.5
+          },
+          {
+            "text": "Regularly reviewing the above areas will help maintain this strength.",
+            "start": 1399,
+            "end": 1468,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    "error": null,
+    "model": "ensemble:sphura"
+  },
+  {
+    "persona": "vikram",
+    "question": "what is a SIP?",
+    "notes": [
+      "ok"
+    ],
+    "conversationId": "bcfe4edd-2244-4029-905a-a700b3883e94",
+    "text": "A SIP (Systematic Investment Plan) is a way to invest a fixed amount regularly\u2014usually monthly\u2014in a mutual fund, instead of investing a lump sum at once. It builds investing discipline and uses rupee-cost averaging: you buy more units when prices are low and fewer when prices are high.\n\n**Worked example (assumed 12% annual return):**\n\n| | Amount |\n|---|---|\n| Monthly SIP | \u20b95,000 |\n| Tenure | 5 years |\n| Total invested | \u20b93,00,000 |\n| Estimated maturity value | \u20b94,12,432 |\n| Estimated gains | \u20b91,12,432 |\n\nSource: SIP future-value calculator, 12% annual return, monthly compounding [1].\n\n**Key points**\n- You can start small (often \u20b9500 per month) and increase or pause anytime.\n- Returns are market-linked and not guaranteed; the 12% figure above is only an assumption for illustration.\n- SIPs suit long-term goals such as retirement, a child\u2019s education, or buying a home.\n\nThis is educational information, not personalised investment advice. If you are considering a specific fund, look at its objective, past performance, expense ratio and risk level, and decide based on your own goals and horizon.",
+    "firstTokenS": null,
+    "latencyTotalS": 62.61,
+    "statuses": [
+      "thinking:Understanding your question",
+      "composing:Writing the answer",
+      "thinking:Thinking it through",
+      "composing:Writing the answer",
+      "analyzing:Calculating",
+      "composing:Writing the answer",
+      "thinking:Retrying with GPT-OSS 120B",
+      "thinking:Retrying with Nemotron 3.5 Super VL",
+      "composing:Writing the answer",
+      "analyzing:Checking claims against sources"
+    ],
+    "steps": [
+      {
+        "id": "ff53d4b1-6574-4624-878c-71f2b3beac87",
+        "tool": "router",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "c65c7507-ec80-4711-b6f8-e105ce63f36e",
+        "tool": "memory_recall",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "d03a028f-4549-4ad5-b442-5061a2901949",
+        "tool": "sip_future_value",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "cd4747cd-0c2e-4b43-adf7-9f7acf2c96fe",
+        "tool": "switch_model",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "aa32623a-71f0-4775-97e9-ab60911f199d",
+        "tool": "switch_model",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "700875e5-fc5a-49cb-bca5-c9462a50f520",
+        "tool": "verify",
+        "status": "done",
+        "title": null
+      }
+    ],
+    "sourceCount": 1,
+    "verification": {
+      "verification": {
+        "score": 0.667,
+        "label": "mostly grounded",
+        "supported": 2,
+        "partial": 0,
+        "unsupported": 1,
+        "uncited": 6,
+        "model": "nli-deberta-v3-xsmall (ONNX)",
+        "sentences": [
+          {
+            "text": "A SIP (Systematic Investment Plan) is a way to invest a fixed amount regularly\u2014usually monthly\u2014in a mutual fund, instead of investing a lump sum at once.",
+            "start": 0,
+            "end": 153,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          },
+          {
+            "text": "It builds investing discipline and uses rupee-cost averaging: you buy more units when prices are low and fewer when prices are high.",
+            "start": 154,
+            "end": 286,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          },
+          {
+            "text": "**Worked example (assumed 12% annual return):**",
+            "start": 288,
+            "end": 335,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          },
+          {
+            "text": "Source: SIP future-value calculator, 12% annual return, monthly compounding [1].",
+            "start": 511,
+            "end": 591,
+            "sourceIndexes": [
+              1
+            ],
+            "verdict": "supported",
+            "score": 0.977
+          },
+          {
+            "text": "You can start small (often \u20b9500 per month) and increase or pause anytime.",
+            "start": 610,
+            "end": 683,
+            "sourceIndexes": [],
+            "verdict": "unsupported",
+            "score": 0.003
+          },
+          {
+            "text": "Returns are market-linked and not guaranteed; the 12% figure above is only an assumption for illustration.",
+            "start": 686,
+            "end": 792,
+            "sourceIndexes": [],
+            "verdict": "supported",
+            "score": 0.9
+          },
+          {
+            "text": "SIPs suit long-term goals such as retirement, a child\u2019s education, or buying a home.",
+            "start": 795,
+            "end": 879,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          },
+          {
+            "text": "This is educational information, not personalised investment advice.",
+            "start": 881,
+            "end": 949,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          },
+          {
+            "text": "If you are considering a specific fund, look at its objective, past performance, expense ratio and risk level, and decide based on your own goals and horizon.",
+            "start": 950,
+            "end": 1108,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    "error": null,
+    "model": "nvidia:nvidia/nemotron-3.5-super-vl-120b-a12b"
+  },
+  {
+    "persona": "vikram",
+    "question": "TCS share price today",
+    "notes": [
+      "ok"
+    ],
+    "conversationId": "bcfe4edd-2244-4029-905a-a700b3883e94",
+    "text": "TCS (Tata Consultancy Services) is trading at \u20b92,506.90, down \u20b922.10 (-0.87%) from the previous close. The day\u2019s range was \u20b92,479.00 to \u20b92,533.00.\n\nSource: Yahoo Finance quote for TCS.NS [1]. Data is delayed as of 22 October 2026, 22:07 UTC.\n\nThis is market information only, not a buy or sell recommendation.",
+    "firstTokenS": 2.05,
+    "latencyTotalS": 2.48,
+    "statuses": [
+      "thinking:Understanding your question",
+      "searching:Fetching market data",
+      "composing:Writing the answer",
+      "analyzing:Checking claims against sources"
+    ],
+    "steps": [
+      {
+        "id": "72d93306-5879-49bb-8a65-49cd4a335546",
+        "tool": "router",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "dba58ebe-a8f9-4187-9efa-d5c92910f8fb",
+        "tool": "get_quote",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "56e2b7bd-8cdd-4c85-9698-aea8d3763b40",
+        "tool": "memory_recall",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "c8a9e4e2-9a72-4683-b546-53591997f1f7",
+        "tool": "verify",
+        "status": "done",
+        "title": null
+      }
+    ],
+    "sourceCount": 1,
+    "verification": {
+      "verification": {
+        "score": 0.75,
+        "label": "mostly grounded",
+        "supported": 3,
+        "partial": 0,
+        "unsupported": 1,
+        "uncited": 1,
+        "model": "nli-deberta-v3-xsmall (ONNX)",
+        "sentences": [
+          {
+            "text": "TCS (Tata Consultancy Services) is trading at \u20b92,506.90, down \u20b922.10 (-0.87%) from the previous close.",
+            "start": 0,
+            "end": 102,
+            "sourceIndexes": [],
+            "verdict": "supported",
+            "score": 0.956
+          },
+          {
+            "text": "The day\u2019s range was \u20b92,479.00 to \u20b92,533.00.",
+            "start": 103,
+            "end": 146,
+            "sourceIndexes": [],
+            "verdict": "supported",
+            "score": 0.979
+          },
+          {
+            "text": "Source: Yahoo Finance quote for TCS.NS [1].",
+            "start": 148,
+            "end": 191,
+            "sourceIndexes": [
+              1
+            ],
+            "verdict": "unsupported",
+            "score": 0.003
+          },
+          {
+            "text": "Data is delayed as of 22 October 2026, 22:07 UTC.",
+            "start": 192,
+            "end": 241,
+            "sourceIndexes": [],
+            "verdict": "supported",
+            "score": 0.967
+          },
+          {
+            "text": "This is market information only, not a buy or sell recommendation.",
+            "start": 243,
+            "end": 309,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    "error": null,
+    "model": "nvidia:nvidia/nemotron-3.5-super-vl-120b-a12b"
+  },
+  {
+    "persona": "vikram",
+    "question": "news about HDFC Bank",
+    "notes": [
+      "ok"
+    ],
+    "conversationId": "bcfe4edd-2244-4029-905a-a700b3883e94",
+    "text": "HDFC Bank (HDFCBANK.NS) is trading at \u20b9694.05, down \u20b912.90 (-1.82%) from the previous close. The day\u2019s range was \u20b9689.10 to \u20b9703.35.\n\nSource: Yahoo Finance quote for HDFCBANK.NS. Delayed data as of 22 October 2026, 22:07 UTC.\n\nRecent news: Emkay Global has a \u201cBuy\u201d rating with a target of \u20b91,050, and Anand Rathi has a \u201cBuy\u201d rating with a target of \u20b9966 (both dated 19 October 2026). Bank Nifty fell 0.5% on 19 October, with HDFC Bank among the top losers.\n\nThis is market information only, not a buy or sell recommendation.",
+    "firstTokenS": 4.42,
+    "latencyTotalS": 5.68,
+    "statuses": [
+      "thinking:Understanding your question",
+      "searching:Fetching market data",
+      "composing:Writing the answer",
+      "analyzing:Checking claims against sources"
+    ],
+    "steps": [
+      {
+        "id": "77eb3ea2-3dd6-4d26-a2f5-4a3ff4bc1b15",
+        "tool": "router",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "dd4f64b4-879d-437c-b664-a47c116eefd6",
+        "tool": "get_quote",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "1806bacc-8987-436d-bd34-9afbc5416c88",
+        "tool": "finance_news",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "e71c8a77-4451-495d-be8a-14194f4237a4",
+        "tool": "memory_recall",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "f1701bc0-e7e0-49a8-a954-e3edeeb129c9",
+        "tool": "verify",
+        "status": "done",
+        "title": null
+      }
+    ],
+    "sourceCount": 6,
+    "verification": {
+      "verification": {
+        "score": 1.0,
+        "label": "grounded",
+        "supported": 5,
+        "partial": 0,
+        "unsupported": 0,
+        "uncited": 2,
+        "model": "nli-deberta-v3-xsmall (ONNX)",
+        "sentences": [
+          {
+            "text": "HDFC Bank (HDFCBANK.NS) is trading at \u20b9694.05, down \u20b912.90 (-1.82%) from the previous close.",
+            "start": 0,
+            "end": 92,
+            "sourceIndexes": [],
+            "verdict": "supported",
+            "score": 0.944
+          },
+          {
+            "text": "The day\u2019s range was \u20b9689.10 to \u20b9703.35.",
+            "start": 93,
+            "end": 132,
+            "sourceIndexes": [],
+            "verdict": "supported",
+            "score": 0.977
+          },
+          {
+            "text": "Source: Yahoo Finance quote for HDFCBANK.NS.",
+            "start": 134,
+            "end": 178,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          },
+          {
+            "text": "Delayed data as of 22 October 2026, 22:07 UTC.",
+            "start": 179,
+            "end": 225,
+            "sourceIndexes": [],
+            "verdict": "supported",
+            "score": 0.9
+          },
+          {
+            "text": "Recent news: Emkay Global has a \u201cBuy\u201d rating with a target of \u20b91,050, and Anand Rathi has a \u201cBuy\u201d rating with a target of \u20b9966 (both dated 19 October 2026).",
+            "start": 227,
+            "end": 383,
+            "sourceIndexes": [],
+            "verdict": "supported",
+            "score": 0.9
+          },
+          {
+            "text": "Bank Nifty fell 0.5% on 19 October, with HDFC Bank among the top losers.",
+            "start": 384,
+            "end": 456,
+            "sourceIndexes": [],
+            "verdict": "supported",
+            "score": 0.944
+          },
+          {
+            "text": "This is market information only, not a buy or sell recommendation.",
+            "start": 458,
+            "end": 524,
+            "sourceIndexes": [],
+            "verdict": "uncited",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    "error": null,
+    "model": "nvidia:nvidia/nemotron-3.5-super-vl-120b-a12b"
+  },
+  {
+    "persona": "vikram",
+    "question": "should I buy Reliance?",
+    "notes": [
+      "ok"
+    ],
+    "conversationId": "bcfe4edd-2244-4029-905a-a700b3883e94",
+    "text": "I cannot give a personalised buy or sell recommendation for Reliance Industries. Here is how to think about it:\n\n**What Reliance is**\nReliance Industries is a large Indian conglomerate with businesses in energy (oil refining and petrochemicals), retail and digital services (Jio). Its share price moves with refining margins, petrochemical demand, retail and telecom growth, and broader market sentiment.\n\n**What to check before deciding**\n- Your goal and time horizon: equities suit long-term goals (5+ years), not short-term needs.\n- Valuation: compare the current P/E ratio with its own history and with sector peers.\n- Business risks: refining-crack spreads, regulatory changes in telecom/retail, and commodity price cycles.\n- Diversification: avoid putting too much of your portfolio in a single stock.\n- Costs: brokerage, STT, and taxes on capital gains.\n\n**Next step**\nConsult a SEBI-registered investment adviser who can assess your full financial situation, risk appetite and goals before you invest.\n\n*Sphura is not a SEBI-registered investment adviser; this is general education, not a personalised recommendation.*",
+    "firstTokenS": 1.08,
+    "latencyTotalS": 4.78,
+    "statuses": [
+      "thinking:Understanding your question",
+      "composing:Writing the answer"
+    ],
+    "steps": [
+      {
+        "id": "16b5dfc1-5ed0-4093-958f-e81628cc9a72",
+        "tool": "router",
+        "status": "done",
+        "title": null
+      },
+      {
+        "id": "b3ebadde-6a68-468c-916a-14834c98ccbe",
+        "tool": "memory_recall",
+        "status": "done",
+        "title": null
+      }
+    ],
+    "sourceCount": 0,
+    "verification": null,
+    "error": null,
+    "model": "nvidia:nvidia/nemotron-3.5-super-vl-120b-a12b"
+  },
+  {
+    "persona": "offtopic",
+    "question": "write a Python script that sorts a list",
+    "notes": [
+      "ok"
+    ],
+    "conversationId": "15585555-7e71-4f5d-840e-140d6d956243",
+    "text": "I'm Sphura, a finance-only assistant, so I can't help with that request.\n\nI can help you with things like:\n- **Spending**: upload a bank statement and ask where your money goes or which subscriptions to cut.\n- **Documents**: ask grounded questions about balance sheets, invoices, policies or annual reports.\n- **Markets**: stock, index, mutual fund or FX quotes and finance news.\n- **Finance concepts**: SIP, EMI, FD/RD, tax regimes, ratios like EBITDA or the current ratio.\n\nAsk me a money question and I'll get to work.",
+    "firstTokenS": 0.14,
+    "latencyTotalS": 0.21,
+    "statuses": [
+      "thinking:Understanding your question",
+      "composing:Writing the answer"
+    ],
+    "steps": [
+      {
+        "id": "b587dd88-d48d-474e-9887-4c314009eb2f",
+        "tool": "router",
+        "status": "done",
+        "title": null
+      }
+    ],
+    "sourceCount": 0,
+    "verification": null,
+    "error": null,
+    "model": "ensemble:sphura"
+  },
+  {
+    "persona": "offtopic",
+    "question": "recipe for biryani",
+    "notes": [
+      "ok"
+    ],
+    "conversationId": "15585555-7e71-4f5d-840e-140d6d956243",
+    "text": "I'm Sphura, a finance-only assistant, so I can't help with that request.\n\nI can help you with things like:\n- **Spending**: upload a bank statement and ask where your money goes or which subscriptions to cut.\n- **Documents**: ask grounded questions about balance sheets, invoices, policies or annual reports.\n- **Markets**: stock, index, mutual fund or FX quotes and finance news.\n- **Finance concepts**: SIP, EMI, FD/RD, tax regimes, ratios like EBITDA or the current ratio.\n\nAsk me a money question and I'll get to work.",
+    "firstTokenS": 0.13,
+    "latencyTotalS": 0.21,
+    "statuses": [
+      "thinking:Understanding your question",
+      "composing:Writing the answer"
+    ],
+    "steps": [
+      {
+        "id": "58f56cbc-7cb5-44be-9395-62a434ec443f",
+        "tool": "router",
+        "status": "done",
+        "title": null
+      }
+    ],
+    "sourceCount": 0,
+    "verification": null,
+    "error": null,
+    "model": "ensemble:sphura"
+  },
+  {
+    "persona": "offtopic",
+    "question": "who won the match yesterday?",
+    "notes": [
+      "ok"
+    ],
+    "conversationId": "15585555-7e71-4f5d-840e-140d6d956243",
+    "text": "I'm Sphura, a finance-only assistant, so I can't help with that request.\n\nI can help you with things like:\n- **Spending**: upload a bank statement and ask where your money goes or which subscriptions to cut.\n- **Documents**: ask grounded questions about balance sheets, invoices, policies or annual reports.\n- **Markets**: stock, index, mutual fund or FX quotes and finance news.\n- **Finance concepts**: SIP, EMI, FD/RD, tax regimes, ratios like EBITDA or the current ratio.\n\nAsk me a money question and I'll get to work.",
+    "firstTokenS": 0.13,
+    "latencyTotalS": 0.2,
+    "statuses": [
+      "thinking:Understanding your question",
+      "composing:Writing the answer"
+    ],
+    "steps": [
+      {
+        "id": "57839246-99b0-42bb-ac30-e485c8959b8d",
+        "tool": "router",
+        "status": "done",
+        "title": null
+      }
+    ],
+    "sourceCount": 0,
+    "verification": null,
+    "error": null,
+    "model": "ensemble:sphura"
+  }
+]

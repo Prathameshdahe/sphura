@@ -1,0 +1,61 @@
+# Finance rules used by the agent's calculator tools (app/agent/tools/tax.py).
+# Amounts are in INR. Keep the "as_of" / "source" fields current whenever the slabs are edited: the agent quotes them.
+income_tax:
+  financial_year: "FY 2026-27"
+  assessment_year: "AY 2027-28"
+  as_of: "2026-10-22"
+  # Checked on 2026-10-22: Budget 2026 left the personal income-tax slabs unchanged, so the rates below are the
+  # Finance Act 2025 rates carried into FY 2026-27. Primary reference: the Income Tax Department tax-slab page;
+  # secondary (where the "unchanged for FY 2026-27" statement was read): BankBazaar, ClearTax.
+  # From 1 April 2026 the Income-tax Act, 2025 replaces the 1961 Act and calls this period "tax year 2026-27";
+  # the slab rates did not change with the new Act.
+  source: "https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-1 (official); https://www.bankbazaar.com/tax/income-tax-slabs.html (FY 2026-27 table, checked 2026-10-22)"
+  note: "Individuals below 60. Tax year 2026-27 under the Income-tax Act, 2025 (in force from 1 April 2026); rates unchanged by Budget 2026 per public sources checked on 2026-10-22. Verify against the Income Tax Department before filing."
+  new_regime:
+    name: "new regime (default regime; s.115BAC of the 1961 Act)"
+    standard_deduction: 75000          # salaried / pensioners
+    deductions_allowed: false          # 80C/80D/HRA etc. are not available (except employer NPS u/s 80CCD(2))
+    max_other_deductions: 0
+    slabs:                             # taxable income bands, cumulative
+      - { upto: 400000,  rate_pct: 0 }
+      - { upto: 800000,  rate_pct: 5 }
+      - { upto: 1200000, rate_pct: 10 }
+      - { upto: 1600000, rate_pct: 15 }
+      - { upto: 2000000, rate_pct: 20 }
+      - { upto: 2400000, rate_pct: 25 }
+      - { upto: null,    rate_pct: 30 }
+    rebate_87a:
+      taxable_income_upto: 1200000     # no tax up to 12 lakh taxable income (12.75 lakh salary with the standard deduction)
+      max_rebate: 60000
+      marginal_relief: true            # tax just above 12 lakh is capped at the income above 12 lakh
+    surcharge:                         # on income-tax, capped at 25% in the new regime
+      - { above: 5000000,  rate_pct: 10 }
+      - { above: 10000000, rate_pct: 15 }
+      - { above: 20000000, rate_pct: 25 }
+    cess_pct: 4                        # health and education cess on tax + surcharge
+  old_regime:
+    name: "old regime (with deductions)"
+    standard_deduction: 50000
+    deductions_allowed: true           # 80C (1.5 lakh), 80D, 80CCD(1B) (50k), HRA, 24(b) home-loan interest (2 lakh) ...
+    max_other_deductions: 1000000      # sanity cap on the deductions a user can claim through the tool
+    slabs:
+      - { upto: 250000,  rate_pct: 0 }
+      - { upto: 500000,  rate_pct: 5 }
+      - { upto: 1000000, rate_pct: 20 }
+      - { upto: null,    rate_pct: 30 }
+    rebate_87a:
+      taxable_income_upto: 500000
+      max_rebate: 12500
+      marginal_relief: false
+    surcharge:
+      - { above: 5000000,  rate_pct: 10 }
+      - { above: 10000000, rate_pct: 15 }
+      - { above: 20000000, rate_pct: 25 }
+      - { above: 50000000, rate_pct: 37 }
+    cess_pct: 4
+  common_deductions_old_regime:        # for the "how does 80C work?" style explanations
+    80C: { limit: 150000, examples: "EPF, PPF, ELSS, life insurance premium, home-loan principal, 5-year tax-saver FD, NSC, SSY, tuition fees" }
+    80CCD(1B): { limit: 50000, examples: "additional NPS contribution" }
+    80D: { limit: 25000, examples: "health insurance premium (50,000 for senior-citizen parents)" }
+    24(b): { limit: 200000, examples: "home-loan interest on a self-occupied house" }
+    80TTA: { limit: 10000, examples: "savings-account interest" }

@@ -1,0 +1,77 @@
+{
+  "tag": "sphura-fin-1.7b",
+  "method": "llama.cpp convert_hf_to_gguf --outtype q8_0 → ollama create",
+  "quantize": "q8_0",
+  "created": true,
+  "toolTemplate": false,
+  "modelfile": "training/runs/sphura-fin-1.7b/Modelfile",
+  "log": "onents \u001b[K\nparsing GGUF ⠋ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[A\u001b[1Ggathering model components \u001b[K\nparsing GGUF ⠙ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[A\u001b[1Ggathering model components \u001b[K\nparsing GGUF ⠹ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[A\u001b[1Ggathering model components \u001b[K\nparsing GGUF ⠸ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[A\u001b[1Ggathering model components \u001b[K\nparsing GGUF \u001b[K\nusing existing layer sha256:8ee45b197cb16b57354f4fc1a0ab062d1d3e5436182a0c9101588d5621bb66a9 \u001b[K\ncreating new layer sha256:b116072f1ae7ece8ffdbdba7f39cf204cea2ef8295c7129b932ace09159cbe1e \u001b[K\nusing existing layer sha256:97b96b64c4088fc368b9f4a0244fac9110e171a0d7d951a0313161158f6d0010 \u001b[K\nusing existing layer sha256:2788ee62a64e28c32c1cb84dec98bd17472ecf9525be33adf56eb8ad361ad8e1 \u001b[K\nusing existing layer sha256:f9918bc64fee04e94c24f2bcbe56cb1c09bb6c2e1b6488f2a851557b6d13ce5c \u001b[K\nwriting manifest ⠋ \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[A\u001b[A\u001b[A\u001b[A\u001b[A\u001b[A\u001b[A\u001b[1Ggathering model components \u001b[K\nparsing GGUF \u001b[K\nusing existing layer sha256:8ee45b197cb16b57354f4fc1a0ab062d1d3e5436182a0c9101588d5621bb66a9 \u001b[K\ncreating new layer sha256:b116072f1ae7ece8ffdbdba7f39cf204cea2ef8295c7129b932ace09159cbe1e \u001b[K\nusing existing layer sha256:97b96b64c4088fc368b9f4a0244fac9110e171a0d7d951a0313161158f6d0010 \u001b[K\nusing existing layer sha256:2788ee62a64e28c32c1cb84dec98bd17472ecf9525be33adf56eb8ad361ad8e1 \u001b[K\nusing existing layer sha256:f9918bc64fee04e94c24f2bcbe56cb1c09bb6c2e1b6488f2a851557b6d13ce5c \u001b[K\nwriting manifest \u001b[K\nsuccess \u001b[K\u001b[?25h\u001b[?2026l\n",
+  "exportedAt": "2026-10-22T17:15:35Z",
+  "smoke": [
+    {
+      "prompt": "What is a SIP?",
+      "answer": "A Systematic Investment Plan (SIP) lets you invest fixed amounts at regular intervals into an equity mutual fund, automatically. You decide the frequency (monthly, quarterly or yearly), amount and fund; the SIP auto-debits your account on due dates. SIPs help average market volatility over time and reduce transaction costs.",
+      "seconds": 7.58,
+      "tokensPerSecond": 45.6
+    },
+    {
+      "prompt": "EMI on 10 lakh at 9% for 5 years",
+      "answer": "₹84,344 (after 5 years).",
+      "seconds": 0.38,
+      "tokensPerSecond": 48.7
+    },
+    {
+      "prompt": "I earn 12 LPA, which tax regime is better?",
+      "answer": "You are earning ₹12 lakh/year: it's better to file under the presumptive regime under Section 44AD. With that you can save up to ₹2.85 lakh a year in TDS and not pay any income tax (since your turnover is below ₹10 lakh).",
+      "seconds": 1.43,
+      "tokensPerSecond": 46.4
+    },
+    {
+      "prompt": "How does 80C work?",
+      "answer": "You can get up to ₹1.5 lakh of the 80C limit each year by investing in your own HRA for your home, any other house you own or a house for rent, and your parents' or spouse's house (up to ₹2 lakh). You can also invest in a PPF, ELSS or NSC under this limit.",
+      "seconds": 2.2,
+      "tokensPerSecond": 35.5
+    },
+    {
+      "prompt": "What are the GST slabs?",
+      "answer": "Standard (0–18%): 0–5 lakh; 5–10 lakh; 10–20 lakh; above 20 lakh on turnover. On input tax credit: 0–5 lakh; 5–10 lakh; 10–20 lakh; above 20 lakh on turnover. Integrated Goods and Services: 0–18% on most goods and services; 0–28% on food and beverages, transport, telecommunications, and education. Special slabs: 0–18% on exports; 0–18% on certain services; 0–18% on agricultural goods and services; 0–18% on IT services, medical devices and diagnostics, and software.",
+      "seconds": 4.8,
+      "tokensPerSecond": 34.3
+    },
+    {
+      "prompt": "What happens if a UPI payment fails but money is debited?",
+      "answer": "If a payment succeeds but you have to go back to the merchant, the merchant will refund you. If it fails, there is no refund — the money just disappears. You should always double-check the payment details when making a payment, and check with your payment provider if something is wrong.",
+      "seconds": 2.06,
+      "tokensPerSecond": 30.5
+    },
+    {
+      "prompt": "Is 750 a good credit score?",
+      "answer": "Yes. Your 750 score falls within the \"excellent\" range of 740–850. High scores indicate low risk for lenders, which means they are likely to approve your loan or credit card application with favorable terms.",
+      "seconds": 2.05,
+      "tokensPerSecond": 26.7
+    },
+    {
+      "prompt": "What is the current ratio and what does it mean?",
+      "answer": "The current ratio measures a company's ability to pay short-term obligations with its current assets: current assets ÷ current liabilities. A higher ratio indicates greater liquidity, while a lower ratio could signal financial strain. It should be compared to industry standards for interpretation.",
+      "seconds": 2.04,
+      "tokensPerSecond": 27.3
+    },
+    {
+      "prompt": "Should I buy Reliance?",
+      "answer": "I'm Sphura, a finance-only assistant for people in India; this request isn't about finance. I can help with personal finance topics like budgeting, loans or credit cards.",
+      "seconds": 1.53,
+      "tokensPerSecond": 27.4
+    },
+    {
+      "prompt": "Write a Python script to sort a list",
+      "answer": "Here's a simple Python script that sorts a list:\n```python\ndef sort_list(lst):\n    return sorted(lst)\n```\nYou can use this function by passing in your list as an argument, like this: `sort_list([3, 1, 4, 2])`.",
+      "seconds": 1.9,
+      "tokensPerSecond": 33.4
+    }
+  ],
+  "toolSmoke": {
+    "prompt": "EMI for a 25 lakh home loan at 8.5% for 20 years?",
+    "toolCalls": [],
+    "content": "{\"name\": \"emi\", \"arguments\": {\"principal\": 250000, \"annual_rate\": 8.5, \"years\": 20}}"
+  }
+}
